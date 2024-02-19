@@ -15,6 +15,8 @@ namespace CircuitBreakerWithOutPolly.Controllers
             _circuitBreaker = circuitBreaker;
 
         }
+
+        [HttpPost("GetData")]
         public async Task<HttpResponseMessage> GetAsync(string url)
         {
             if (_circuitBreaker.IsCircuitOpen)

@@ -1,5 +1,6 @@
 
 using CircuitBreakerWithOutPolly;
+using Microsoft.OpenApi.Models;
 
 namespace CircuitBreakerWithOutPolly
 {
@@ -11,12 +12,15 @@ namespace CircuitBreakerWithOutPolly
 
             // Add services to the container.
 
-            builder.Services.AddSingleton<CircuitBreaker>(_ => new CircuitBreaker(TimeSpan.FromSeconds(30), 5));
+            builder.Services.AddSingleton<CircuitBreaker>(_ => new CircuitBreaker(TimeSpan.FromSeconds(10), 5));
 
             builder.Services.AddControllers();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
-            builder.Services.AddSwaggerGen();
+            builder.Services.AddSwaggerGen(c =>
+            {
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "Circuit Breaker WithOut Polly", Version = "v1" });
+            });
            
 
             var app = builder.Build();
