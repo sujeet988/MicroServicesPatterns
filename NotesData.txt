@@ -12,8 +12,9 @@ Bhrugen Patel
 oreaaly and udemy
 -----------Design Patterns of microservices
 Database patterns
-Saga Pattern
+Saga Pattern implemented by : Choreography(ServiceBus) or orchestration
 Circuit Breaker Pattern => using polly
+Unit of work
 
 ----
 https://www.c-sharpcorner.com/article/microservices-architecture-pattern-saga/
