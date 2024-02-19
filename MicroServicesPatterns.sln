@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.34408.133
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CircuitBreaker", "CircuitBreaker", "{0FA8D0A8-7E65-45F0-B14E-11E0ED86A4E1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CircuitBreakerDemo", "CircuitBreaker\CircuitBreakerDemo\CircuitBreakerDemo.csproj", "{B8C9AF94-6174-4D25-9A2E-335A51224224}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Notes", "Notes", "{1AC23907-C060-46AD-8B57-362F9F332666}"
+	ProjectSection(SolutionItems) = preProject
+		MicroServicesNotes.txt = MicroServicesNotes.txt
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CircuitBreakerWithOutPolly", "CircuitBreakerWithOutPolly\CircuitBreakerWithOutPolly.csproj", "{2AF734BB-563C-475F-B3D6-BF6DC3A1E8A4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B8C9AF94-6174-4D25-9A2E-335A51224224}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8C9AF94-6174-4D25-9A2E-335A51224224}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8C9AF94-6174-4D25-9A2E-335A51224224}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8C9AF94-6174-4D25-9A2E-335A51224224}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2AF734BB-563C-475F-B3D6-BF6DC3A1E8A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2AF734BB-563C-475F-B3D6-BF6DC3A1E8A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2AF734BB-563C-475F-B3D6-BF6DC3A1E8A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2AF734BB-563C-475F-B3D6-BF6DC3A1E8A4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B8C9AF94-6174-4D25-9A2E-335A51224224} = {0FA8D0A8-7E65-45F0-B14E-11E0ED86A4E1}
+		{2AF734BB-563C-475F-B3D6-BF6DC3A1E8A4} = {0FA8D0A8-7E65-45F0-B14E-11E0ED86A4E1}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5E8ABA73-DD90-45EA-8A30-EF28D2B95DE7}
+	EndGlobalSection
+EndGlobal
