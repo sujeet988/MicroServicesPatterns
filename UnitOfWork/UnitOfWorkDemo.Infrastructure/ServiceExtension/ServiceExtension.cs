@@ -24,5 +24,6 @@ namespace UnitOfWorkDemo.Infrastructure.ServiceExtension
 
             return services;
         }
+        //https://www.c-sharpcorner.com/article/unit-of-work-with-generic-repository-implementation-using-net-core-6-web-api/
     }
 }

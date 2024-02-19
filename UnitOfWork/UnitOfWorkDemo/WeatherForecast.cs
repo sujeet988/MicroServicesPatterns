@@ -9,5 +9,7 @@ namespace UnitOfWorkDemo
         public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
 
         public string? Summary { get; set; }
+
+        //https://www.c-sharpcorner.com/article/unit-of-work-with-generic-repository-implementation-using-net-core-6-web-api/
     }
 }
