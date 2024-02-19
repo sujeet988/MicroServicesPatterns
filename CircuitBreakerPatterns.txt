@@ -1,0 +1,52 @@
+Circuit Breaker pattern :
+
+The Circuit Breaker pattern is a design pattern used in modern software development to detect the failure of an operation and prevent 
+the application from continuously trying to perform the failed operation. This pattern is particularly useful for distributed systems 
+where a service might become temporarily unavailable or response time might be higher due to network issues or high load.
+
+Realtime Example : Saving data to blob storage
+
+Polly :
+Polly is a .NET resilience and transient-fault-handling library that allows developers to express policies such as Retry, 
+Circuit Breaker, Timeout, Bulkhead Isolation, and Fallback in a fluent and thread-safe manner.
+
+https://www.c-sharpcorner.com/article/circuit-breaker-in-net-core/
+
+---
+
+A circuit breaker is a design pattern used in software development to improve the resilience and fault tolerance of applications that interact with external services or resources. It is named after its electrical counterpart, which is designed to protect an electrical circuit from damage due to excessive current. In software, a circuit breaker serves a similar purpose by preventing the application from repeatedly trying to call a failing service or resource, which can lead to performance degradation and further issues.
+
+Circuit Breaker Pattern
+Here's an explanation of the circuit breaker pattern 
+
+1. Closed State (Normal Operation)
+
+In the closed state, the circuit breaker allows requests to pass through as usual.
+During this state, it monitors the success and failure of these requests.
+If a certain threshold of failures is reached, the circuit breaker transitions to the open state.
+2. Open State (Service Unavailable)
+
+In the open state, the circuit breaker blocks requests from reaching the failing service or resource.
+This state is entered when a predefined threshold of failures is exceeded.
+During the open state, no requests are sent to the service/resource, which can reduce the load on the resource.
+The circuit breaker periodically checks if the service/resource has recovered by allowing a limited number of test requests through.
+3. Half-Open State (Testing Service Availability)
+
+After a predefined period of time, the circuit breaker transitions into the half-open state.
+In this state, a limited number of test requests are allowed to pass through to the service/resource to check if it has recovered.
+If these test requests succeed without any issues, the circuit breaker transitions back to the closed state.
+If test requests still fail, the circuit breaker returns to the open state, continuing to protect the system from further failures.
+Key Concepts
+
+Thresholds: Circuit breakers have thresholds that determine when to transition between states. These thresholds might include the number of consecutive failures, the failure rate, or a combination of factors.
+Timers: Timers control how long the circuit breaker remains in each state. For example, it remains in the open state for a specific duration before transitioning to the half-open state.
+Monitoring: Monitoring and tracking of requests are essential to determine the health of the service or resource and decide when to open or close the circuit.
+Fallback Mechanism: During the open state, applications can implement fallback mechanisms to provide alternative functionality or graceful degradation of service.
+Automated Recovery: Circuit breakers automatically transition back to the closed state when the service/resource appears to have recovered, reducing the impact on the system.
+The circuit breaker pattern helps to prevent cascading failures in distributed systems, improves system stability, and provides a level of fault tolerance by isolating problematic services or resources. It is a fundamental concept in building robust and resilient software systems.
+
+Circuit Breaker Pattern in .Net Core
+Let's implement the same in .Net Core using two different approaches.
+
+Approach 1 - Without using any specific Nuget package
+Approach 2 - Using Polly Nuget package

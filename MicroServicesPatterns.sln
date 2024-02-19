@@ -5,14 +5,14 @@ VisualStudioVersion = 17.4.34408.133
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CircuitBreaker", "CircuitBreaker", "{0FA8D0A8-7E65-45F0-B14E-11E0ED86A4E1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CircuitBreakerDemo", "CircuitBreaker\CircuitBreakerDemo\CircuitBreakerDemo.csproj", "{B8C9AF94-6174-4D25-9A2E-335A51224224}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CircuitBreakerDemo", "CircuitBreaker\CircuitBreakerDemo\CircuitBreakerDemo.csproj", "{B8C9AF94-6174-4D25-9A2E-335A51224224}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Notes", "Notes", "{1AC23907-C060-46AD-8B57-362F9F332666}"
 	ProjectSection(SolutionItems) = preProject
-		MicroServicesNotes.txt = MicroServicesNotes.txt
+		CircuitBreakerPatterns.txt = CircuitBreakerPatterns.txt
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CircuitBreakerWithOutPolly", "CircuitBreakerWithOutPolly\CircuitBreakerWithOutPolly.csproj", "{2AF734BB-563C-475F-B3D6-BF6DC3A1E8A4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CircuitBreakerWithOutPolly", "CircuitBreakerWithOutPolly\CircuitBreakerWithOutPolly.csproj", "{2AF734BB-563C-475F-B3D6-BF6DC3A1E8A4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

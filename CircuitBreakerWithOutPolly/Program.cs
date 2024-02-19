@@ -2,6 +2,9 @@
 using CircuitBreakerWithOutPolly;
 using Microsoft.OpenApi.Models;
 
+using Polly;
+using Polly.CircuitBreaker;
+
 namespace CircuitBreakerWithOutPolly
 {
     public class Program
@@ -12,7 +15,15 @@ namespace CircuitBreakerWithOutPolly
 
             // Add services to the container.
 
-            builder.Services.AddSingleton<CircuitBreaker>(_ => new CircuitBreaker(TimeSpan.FromSeconds(10), 5));
+            builder.Services.AddHttpClient<IJokeService, JokeService>();
+
+            //Poly :
+
+            builder.Services.AddHttpClient<IJokeService, JokeService>(client =>
+                {
+                    client.BaseAddress = new Uri("https://official-joke-api.appspot.com/random_joke");
+                }).AddTransientHttpErrorPolicy(policy => policy.CircuitBreakerAsync(3, TimeSpan.FromMilliseconds(120000)));
+            
 
             builder.Services.AddControllers();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
