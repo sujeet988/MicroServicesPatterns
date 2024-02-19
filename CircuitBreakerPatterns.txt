@@ -53,3 +53,6 @@ Let's implement the same in .Net Core using two different approaches.
 
 Approach 1 - Without using any specific Nuget package
 Approach 2 - Using Polly Nuget package
+
+--Retry api
+https://github.com/therealjordanlee/RetryApi/tree/master/RetryApi
