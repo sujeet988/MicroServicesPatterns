@@ -14,7 +14,10 @@ https://www.c-sharpcorner.com/article/circuit-breaker-in-net-core/
 
 ---
 
-A circuit breaker is a design pattern used in software development to improve the resilience and fault tolerance of applications that interact with external services or resources. It is named after its electrical counterpart, which is designed to protect an electrical circuit from damage due to excessive current. In software, a circuit breaker serves a similar purpose by preventing the application from repeatedly trying to call a failing service or resource, which can lead to performance degradation and further issues.
+A circuit breaker is a design pattern used in software development to improve the resilience and fault tolerance of applications 
+that interact with external services or resources. It is named after its electrical counterpart, which is designed to protect an 
+electrical circuit from damage due to excessive current. In software, a circuit breaker serves a similar purpose by preventing 
+the application from repeatedly trying to call a failing service or resource, which can lead to performance degradation and further issues.
 
 Circuit Breaker Pattern
 Here's an explanation of the circuit breaker pattern 

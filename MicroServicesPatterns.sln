@@ -5,8 +5,6 @@ VisualStudioVersion = 17.4.34408.133
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CircuitBreaker", "CircuitBreaker", "{0FA8D0A8-7E65-45F0-B14E-11E0ED86A4E1}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CircuitBreakerDemo", "CircuitBreaker\CircuitBreakerDemo\CircuitBreakerDemo.csproj", "{B8C9AF94-6174-4D25-9A2E-335A51224224}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Notes", "Notes", "{1AC23907-C060-46AD-8B57-362F9F332666}"
 	ProjectSection(SolutionItems) = preProject
 		CircuitBreakerPatterns.txt = CircuitBreakerPatterns.txt
@@ -20,10 +18,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{B8C9AF94-6174-4D25-9A2E-335A51224224}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B8C9AF94-6174-4D25-9A2E-335A51224224}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B8C9AF94-6174-4D25-9A2E-335A51224224}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B8C9AF94-6174-4D25-9A2E-335A51224224}.Release|Any CPU.Build.0 = Release|Any CPU
 		{2AF734BB-563C-475F-B3D6-BF6DC3A1E8A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{2AF734BB-563C-475F-B3D6-BF6DC3A1E8A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2AF734BB-563C-475F-B3D6-BF6DC3A1E8A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -33,7 +27,6 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{B8C9AF94-6174-4D25-9A2E-335A51224224} = {0FA8D0A8-7E65-45F0-B14E-11E0ED86A4E1}
 		{2AF734BB-563C-475F-B3D6-BF6DC3A1E8A4} = {0FA8D0A8-7E65-45F0-B14E-11E0ED86A4E1}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
