@@ -13,7 +13,7 @@ oreaaly and udemy
 -----------Design Patterns of microservices
 Database patterns
 Saga Pattern
-Circuit Breaker Pattern-polly
+Circuit Breaker Pattern => using polly
 
 ----
 https://www.c-sharpcorner.com/article/microservices-architecture-pattern-saga/
