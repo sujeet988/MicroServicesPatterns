@@ -1,0 +1,2 @@
+   //https://www.c-sharpcorner.com/article/unit-of-work-with-generic-repository-implementation-using-net-core-6-web-api/
+        https://dotnettutorials.net/lesson/unit-of-work-csharp-mvc/

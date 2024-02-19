@@ -19,11 +19,12 @@ namespace UnitOfWorkDemo.Infrastructure.ServiceExtension
             {
                 options.UseSqlServer(configuration.GetConnectionString("DefaultConnection"));
             });
-            services.AddScoped<IUnitOfWork, UnitOfWork>();
-            services.AddScoped<IProductRepository, ProductRepository>();
+            //services.AddScoped<IUnitOfWork, UnitOfWork>();
+            //services.AddScoped<IProductRepository, ProductRepository>();
 
             return services;
         }
         //https://www.c-sharpcorner.com/article/unit-of-work-with-generic-repository-implementation-using-net-core-6-web-api/
+        https://dotnettutorials.net/lesson/unit-of-work-csharp-mvc/
     }
 }
