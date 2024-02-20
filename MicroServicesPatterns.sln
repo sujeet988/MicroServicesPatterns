@@ -21,6 +21,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SagaPatternTests", "SagaPat
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UnitOfWork", "UnitOfWork", "{DC004310-3502-4A7A-8B0C-FEB2A93634A8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitOfWorkWithDotnet6", "UnitOfWork\UnitOfWorkWithDotnet6\UnitOfWorkWithDotnet6.csproj", "{1B442DD9-3F00-4E54-8E81-08A91756BAEA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,12 +41,17 @@ Global
 		{BB55821F-7B33-42F9-932A-174CF72FA6AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BB55821F-7B33-42F9-932A-174CF72FA6AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BB55821F-7B33-42F9-932A-174CF72FA6AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1B442DD9-3F00-4E54-8E81-08A91756BAEA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B442DD9-3F00-4E54-8E81-08A91756BAEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B442DD9-3F00-4E54-8E81-08A91756BAEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B442DD9-3F00-4E54-8E81-08A91756BAEA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{2AF734BB-563C-475F-B3D6-BF6DC3A1E8A4} = {0FA8D0A8-7E65-45F0-B14E-11E0ED86A4E1}
+		{1B442DD9-3F00-4E54-8E81-08A91756BAEA} = {DC004310-3502-4A7A-8B0C-FEB2A93634A8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5E8ABA73-DD90-45EA-8A30-EF28D2B95DE7}
