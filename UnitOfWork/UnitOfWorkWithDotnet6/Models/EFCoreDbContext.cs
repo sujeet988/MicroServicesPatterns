@@ -12,14 +12,15 @@ namespace UnitOfWorkWithDotnet6.Models
         {
         }
 
-        //OnConfiguring() method is used to select and configure the data source
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        {
-            //We will store the connection string in AppSettings.json file instead of hard coding here
-        }
+        ////OnConfiguring() method is used to select and configure the data source
+        //protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        //{
+        //    //We will store the connection string in AppSettings.json file instead of hard coding here
+        //}
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            base.OnModelCreating(modelBuilder);
         }
 
         //Adding Domain Classes as DbSet Properties

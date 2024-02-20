@@ -1,5 +1,6 @@
+using UnitOfWorkWithDotnet6.Models;
 using UnitOfWorkWithDotnet6.UOW;
-
+using Microsoft.EntityFrameworkCore;
 namespace UnitOfWorkWithDotnet6
 {
     public class Program
@@ -9,8 +10,15 @@ namespace UnitOfWorkWithDotnet6
             var builder = WebApplication.CreateBuilder(args);
 
             // Add services to the container.
-            //Registering the UnitOfWork
-            builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
+
+            //Configure the ConnectionString and DbContext Class
+            builder.Services.AddDbContext<EFCoreDbContext>(options =>
+            {
+                options.UseSqlServer(builder.Configuration.GetConnectionString("EFCoreDBConnection"));
+
+            });
+                //Registering the UnitOfWork
+                builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 
 
             builder.Services.AddControllers();
