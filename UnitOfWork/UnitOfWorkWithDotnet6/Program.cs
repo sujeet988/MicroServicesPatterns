@@ -1,3 +1,5 @@
+using UnitOfWorkWithDotnet6.UOW;
+
 namespace UnitOfWorkWithDotnet6
 {
     public class Program
@@ -7,6 +9,9 @@ namespace UnitOfWorkWithDotnet6
             var builder = WebApplication.CreateBuilder(args);
 
             // Add services to the container.
+            //Registering the UnitOfWork
+            builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
+
 
             builder.Services.AddControllers();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
