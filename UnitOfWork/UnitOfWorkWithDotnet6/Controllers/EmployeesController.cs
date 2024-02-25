@@ -78,8 +78,6 @@ namespace UnitOfWorkWithDotnet6.Controllers
                     _unitOfWork.CreateTransaction();
                     //Use Generic Reposiory to Insert a new employee
                     await _unitOfWork.Employees.InsertAsync(e);
-                    //Call SaveAsync to Insert the data into the database
-                    //await _repository.SaveAsync();
                     //Save Changes to database
                     await _unitOfWork.Save();
                     //Commit the Changes to database
