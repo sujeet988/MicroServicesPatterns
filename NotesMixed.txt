@@ -215,6 +215,15 @@ CPU CAPABILITY/RAM CAPAILITY --IN LOAD INCEACSE
 
 ---consistent hashing
 
+horzonatl shading --
+virtual objects
+ring
+modulo
+1%n
+--
+
+
+
 
 
 

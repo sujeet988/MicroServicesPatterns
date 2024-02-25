@@ -1,3 +1,4 @@
 https://www.c-sharpcorner.com/article/microservices-architecture-pattern-saga/
 https://code-maze.com/csharp-saga-pattern-with-nservicebus/
 https://learn.microsoft.com/en-us/azure/architecture/reference-architectures/saga/saga
+https://www.youtube.com/@ConceptandCoding/playlists
