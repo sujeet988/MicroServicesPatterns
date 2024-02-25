@@ -1,6 +1,8 @@
 using UnitOfWorkWithDotnet6.Models;
 using UnitOfWorkWithDotnet6.UOW;
 using Microsoft.EntityFrameworkCore;
+using System.Text.Json.Serialization;
+
 namespace UnitOfWorkWithDotnet6
 {
     public class Program
@@ -19,6 +21,12 @@ namespace UnitOfWorkWithDotnet6
             });
                 //Registering the UnitOfWork
                 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
+
+            // for json issues
+            builder.Services.AddControllers().AddJsonOptions(options =>
+            {
+                options.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.Preserve;
+            });
 
 
             builder.Services.AddControllers();

@@ -13,6 +13,7 @@ namespace UnitOfWorkWithDotnet6
         public async Task<IEnumerable<Employee>> GetAllEmployeesAsync()
         {
             return await _context.Employees.Include(e => e.Department).ToListAsync();
+            //return await _context.Employees.ToListAsync();
         }
 
         //Retrieves a single employee by their ID along with Department data.
