@@ -1,0 +1,35 @@
+
+create database unitofWorkDemo
+use unitofWorkDemo
+
+create table Employees
+(
+ EmployeeId int identity(100,1) ,
+ Name nvarchar(100),
+ Email nvarchar(100),
+ Position nvarchar(100),
+ DepartmentId int ,
+ CONSTRAINT PK_EmployeeId PRIMARY KEY (EmployeeId),
+  FOREIGN KEY (DepartmentId) REFERENCES Departments(DepartmentId)
+
+)
+
+create table Departments
+(
+ DepartmentId int identity(1,1),
+ Name nvarchar(100),
+ CONSTRAINT PK_DepartmentId PRIMARY KEY (DepartmentId)
+
+)
+
+
+--insert data in employees
+insert into Employees(Name,Email,Position,DepartmentId) values('sujeet','sujeetkumar@microsoft.com','consultant',
+1)
+
+--insert data in departments
+insert into Departments(Name) values('IT')
+
+select * from Departments
+
+select * from Employees
