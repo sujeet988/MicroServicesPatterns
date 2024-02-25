@@ -9,6 +9,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Notes", "Notes", "{1AC23907
 	ProjectSection(SolutionItems) = preProject
 		CircuitBreakerPatterns.txt = CircuitBreakerPatterns.txt
 		NotesData.txt = NotesData.txt
+		NotesMixed.txt = NotesMixed.txt
 		SagaDesignPatternNotes.txt = SagaDesignPatternNotes.txt
 		UnitOfWorkNotes.txt = UnitOfWorkNotes.txt
 	EndProjectSection
@@ -21,7 +22,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SagaPatternTests", "SagaPat
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UnitOfWork", "UnitOfWork", "{DC004310-3502-4A7A-8B0C-FEB2A93634A8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitOfWorkWithDotnet6", "UnitOfWork\UnitOfWorkWithDotnet6\UnitOfWorkWithDotnet6.csproj", "{1B442DD9-3F00-4E54-8E81-08A91756BAEA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UnitOfWorkWithDotnet6", "UnitOfWork\UnitOfWorkWithDotnet6\UnitOfWorkWithDotnet6.csproj", "{1B442DD9-3F00-4E54-8E81-08A91756BAEA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -1,0 +1,221 @@
+Network protocol defines  a rules so that two system can communicates with each other.
+
+7  layers 
+Application layer
+Presentaion layer
+session layer
+transport layer
+network layer
+data layer
+
+
+--mainly applciation layer and trasnport layer is important
+
+** applciation layer  is two types : 1.client server protocol   2 PEER TO peer protocol
+
+ 1.client server protocol
+ans : 
+
+http --
+ftp
+smtp - this is always used with IMAPpop
+web socket
+
+client send request(webbrowser,) send request tp web sever(Server) get respoonse;
+one way commmunciation alwways  cleint intitate request to server and server only response;(http,ftp.smtp)  but web socket is little differnet
+
+web socket : 
+this is bi directionanl and cleint can talk  to server and server can talk to client
+web socket is not peer to peer
+
+server1->client 1
+server1 -cleint 2 
+
+- here server 1 can talk with client 1 and 2 but client 1 and client2 does not talk to each other so this is not peer to peer.
+example: cleint1 send messgae to server 1 and server1 send message to client2 , so this is bidetionla
+--webscket primary used in like whatapp design, telergramdesignn 
+--websocoket mainly  used in  messgeing system.
+
+--SMTp
+used for sending the email 
+imap -used to receiving/accing the email
+smtp widely used with  imap
+
+
+
+
+2.  PEER TO peer protocol
+-> web rtc -- this is  using UDP
+-- web rtc is p to p proctocl that using udp for tranfer the data
+server1->client 1
+server1 -cleint 2 
+-- in peer to all servers and client talk to each other.
+-- os this is fast
+
+
+
+
+--more important is http,webscokets, web rtc -- this is higly used in system design
+
+** Transport layer/networl layer
+TCP/IP:
+connection mentioed
+divide message/data  in  small data part and give ordering for each part  and sORDERING mentioned while sending data to server and getting ackknloged so data recived or not
+
+
+UDP/IP:
+--No connection mentioned
+--no ordring mentioned , 
+--but it is fast than tcp becasue we not doing acknoldgment and No connection mentioned
+-- this used when doing live streaming or video calling
+--
+
+
+FTP :two connection(control connection, and data conenction) begtween cleint and sever
+--not majorly used   because data conenction is not encrypted
+--
+
+
+2 cap throrem
+--tradeoff
+--Desirable peoperty of distributed system with replicated data
+--C- Consistency 
+--A Avaliabllity 
+--P- partion tolrence-- sql db1 writing to db2 but it communication lost. we are never trade of partion tolrence beacause system  should always available
+-CAP CAN NOT BE USED SIMLTUNAENCY :
+IT CAN BE USED  LIKE CA, CP,AP
+
+Consistency--data  sholud be constaint in all db
+Avaliabllity -: all node or all service is availbale or respond
+
+--pArtiotion tolrence
+
+----MicroService
+--how much small service we can create. there must be some pattern
+--differnt phase of microservice
+1. decompostion
+2. database 
+3. communciation
+4. integration
+5. ... and gooes
+
+
+
+decompostion patterbs 
+if we monolthinc application we can diuvide 
+1. decomposbe by bussines capalibility or functionality
+2. decompse by sub domomain(ddd)-domain driven design ->
+just we have shopping application
+order deomain and their have mutliple microservceis
+order domain --their microserrvices
+
+
+
+
+2. database  : single databse or all have same database
+-ddatbase per service or database share service for all
+
+3. communciation:
+--via api
+- via events
+
+4. integraee:
+-- tghis is increate with otehr app or api gateway
+
+5. 
+
+---pattern
+Strangler pattern :
+REFCATOR THE MICROSERVCEI FROM MONLOTHIC SERVICE
+SLOWLY SLOWLY CONVERTING MONOLTHIC APLTAION TO MICROSERVCEI
+
+saga  :
+
+
+CQRS :
+
+-----------------------------
+
+DATA MANAGMENT IN MCRISERVICE
+1.DATAvase for each servcie invidiula (SAGA ,CQRS)
+
+-- benefit --all servcie can u use different database provide like ,ysql, cosmos db, as per their requiremnt
+issues :
+
+--- tranaction issues --solved by SAGA
+--  if need data from mutiple tables  meaans some table in database1  some table in database  --solve  by cqrs(HELPING IN JOIN)
+
+-----
+
+--benefict
+-- easy to scale invidual database
+-- 
+
+
+
+2. database for common for all sevice shared database -NOT MUCHS SUCCESSFULL
+-->BENEFIT : ACID (TRANACTION IS MENTIONED EASILY)
+ Drawback : IF ISSUES IN ONE  THEN DEPLOY ALL TABLES
+ need to scale table that is no needed ie wither all or none
+
+---SAGA
+--SEQUENCE OF LOCAL TRANSACTION
+--FAILURE EVENT SEND BACK IF ANY STEP FAILED SOME THING
+- sAGA IS TOW TYPES
+1.CHREOGRAPHY
+
+--dRWAEBACK --CIRCULAR OR CYCLE DEPDENCY CAN MAKRS
+-- REQSTES -> [EVENT]-SERVCEI1,SERVCIE2,SERVCI3
+
+2. ORACHESTRAION
+
+
+--INTERVIEW QUESTION ONTHIS
+PERSION a --NEED TO DO PAYMENT TO PERSON B
+
+CQRS : COMMAND(CUD) QUERY(sELECT) REQUEST SEGREGATION
+
+--CUD will peromED IN SEPEARTE DB BUT  READ OPEARTEION , THERE WILL BE COMMON VIEW OR DATABASE OR HISTORY WHERE ALL TABLES REQUIRED DATA EXSISTS THERE.
+--THRIUGHT EVENT WE IMPLEMENT THIS. or thriught db trigger or proecuedure
+
+---class 5
+
+1 single server
+2. application an db server seperation
+3. load balancer +multiple app server
+4   databse replication
+5  cache
+6 CDN
+7 DATA CENTER
+8 MNESSAGING QUEUE
+9 
+
+--DB
+--MATER DB VS SLAVE OR SLWAEB DB
+--CACHE
+
+TTL : TIME TO LIVE
+CDN DOES CACHING BUT ALL THOSE WHO DOES CACHING  ARE NOT CDN LIKE REDISS CACHE
+--CDB SOLVE ISSUES OF LATENCY
+--CDN DOES CACHING OF STATIC  DATA LIKE HML,VIDEO, CSS FILE
+- WHEN REQYEST COMEN THEN CODE NEAREST CDN NODES THAT WILL SERVER RQEUEST , IF DATA IS NOT THEN GO TO THE SERVER OR NEAR CDN NODE
+--INCREASE PEROFRMANCE  AND SECUIRITY
+
+--DATABASE SCALING 
+ --TWO TYPES
+1 VBERTICAL SCALING -> 
+CPU CAPABILITY/RAM CAPAILITY --IN LOAD INCEACSE
+--BUT THERE IS LIMIT FOR EXTEND
+
+2.HORIZONTAL SCALING -> 
+--MULTIPLE NODEE
+-BY SHARDING U CAN IMPLMENT THIS.
+--SHADING TWO TYPEX : VERTICAL(column wise) AND HORIZONTAL(row wise)
+
+
+---consistent hashing
+
+
+
+
+
