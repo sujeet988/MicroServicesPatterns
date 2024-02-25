@@ -62,17 +62,22 @@ namespace UnitOfWorkWithDotnet6.Controllers
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost("AddEmployee")]
-        [ValidateAntiForgeryToken]
-        public async Task<object> Create([FromBody] Employee employee)
+        public async Task<object> Create([FromBody] EmployeeDto employee)
         {
             if (ModelState.IsValid)
             {
+                Employee e = new Employee();
+                e.Name = employee.Name;
+                e.Email= employee.Email;
+                e.DepartmentId = employee.DepartmentId;
+                e.Position= employee.Position;
+
                 try
                 {
                     //Begin The Tranaction
                     _unitOfWork.CreateTransaction();
                     //Use Generic Reposiory to Insert a new employee
-                    await _unitOfWork.Employees.InsertAsync(employee);
+                    await _unitOfWork.Employees.InsertAsync(e);
                     //Call SaveAsync to Insert the data into the database
                     //await _repository.SaveAsync();
                     //Save Changes to database
@@ -97,7 +102,6 @@ namespace UnitOfWorkWithDotnet6.Controllers
         }
 
         [HttpPost("UpdateEmployee/{id}")]
-        [ValidateAntiForgeryToken]
         public async Task<object> Edit(int id, [FromBody] Employee employee)
         {
             if (id != employee.EmployeeId)
@@ -132,7 +136,6 @@ namespace UnitOfWorkWithDotnet6.Controllers
         }
 
         [HttpPost("DeleteEmployee/{id}")]
-        [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
             //Begin The Tranaction
