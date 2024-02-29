@@ -100,12 +100,18 @@ namespace UnitOfWorkWithDotnet6.Controllers
         }
 
         [HttpPost("UpdateEmployee/{id}")]
-        public async Task<object> Edit(int id, [FromBody] Employee employee)
+        public async Task<object> Edit(int id, [FromBody] EmployeeDto employeeDto)
         {
-            if (id != employee.EmployeeId)
+            if (id != employeeDto.EmployeeId)
             {
                 return NotFound();
             }
+            Employee employee = await _unitOfWork.Employees.GetEmployeeByIdAsync(Convert.ToInt32(id));
+            employee.Name= employeeDto.Name;
+            employee.Email= employeeDto.Email;
+            employee.Position= employeeDto.Position;
+            employee.DepartmentId= employeeDto.DepartmentId;
+
 
             if (ModelState.IsValid)
             {
@@ -134,7 +140,7 @@ namespace UnitOfWorkWithDotnet6.Controllers
         }
 
         [HttpPost("DeleteEmployee/{id}")]
-        public async Task<IActionResult> DeleteConfirmed(int id)
+        public async Task<object> DeleteConfirmed(int id)
         {
             //Begin The Tranaction
             _unitOfWork.CreateTransaction();
@@ -158,7 +164,7 @@ namespace UnitOfWorkWithDotnet6.Controllers
                     _response.ErrorMessages = new List<string>() { ex.ToString() };
                 }
             }
-            return RedirectToAction(nameof(Index));
+            return _response;
         }
 
 
