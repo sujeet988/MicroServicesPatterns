@@ -7,8 +7,17 @@ https://www.youtube.com/@ConceptandCoding/playlists
 https://blog.avenuecode.com/saga-pattern-for-microservices-architecture
 https://learn.microsoft.com/en-us/azure/architecture/reference-architectures/saga/saga
 https://github.com/Azure-Samples/saga-orchestration-serverless/tree/main
-https://weblogs.asp.net/sfeldman/sagas-with-azure-service-bus
+https://weblogs.asp.net/sfeldman/sagas-with-azure-service-bus --project
 https://saigontechnology.com/blog/implement-a-distributed-transaction-in-microservices-software-system-using-saga-pattern
----
+---github
 https://github.com/Azure-Samples/saga-orchestration-serverless
+https://github.com/trung-tran-sts/simple-saga
+https://github.com/trung-tran-sts/simple-saga/tree/orchestration-based
+https://www.baeldung.com/cs/saga-pattern-microservices
+https://github.com/mspnp/cloud-design-patterns/tree/main
+
+--Choregraphy vs orvcahestrator
+
+
+
 
