@@ -14,7 +14,9 @@ https://github.com/Azure-Samples/saga-orchestration-serverless
 https://github.com/trung-tran-sts/simple-saga
 https://github.com/trung-tran-sts/simple-saga/tree/orchestration-based
 https://www.baeldung.com/cs/saga-pattern-microservices
+--MicroSoft
 https://github.com/mspnp/cloud-design-patterns/tree/main
+https://learn.microsoft.com/en-us/azure/architecture/patterns/choreography
 
 --Choregraphy vs orvcahestrator
 
