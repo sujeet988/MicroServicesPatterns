@@ -35,6 +35,9 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "LLD", "LLD", "{3BCCE41B-C18A-4712-89C4-89C3B2E208EF}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "StrategyDesignPattern", "StrategyDesignPattern", "{6300C51F-705E-4DB2-A7D2-E35B84462FF4}"
+	ProjectSection(SolutionItems) = preProject
+		StrategyDesignPattern\StrategyPatternNotes.txt = StrategyDesignPattern\StrategyPatternNotes.txt
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WithOutStrategyPattern", "StrategyDesignPattern\WithOutStrategyPattern\WithOutStrategyPattern.csproj", "{4741EBB2-FB03-408A-A324-B553B68BFA3B}"
 EndProject
