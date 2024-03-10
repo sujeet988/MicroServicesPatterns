@@ -224,6 +224,17 @@ modulo
 ankur agarwal
 Millennium 
 
+-
+Aggegator Pattern
+domain driven benefit 
+discovery  pattern
+request delegate--.net core use map
+cutome middlware --
+cqrs pattern
+
+----
+
+
 
 
 
