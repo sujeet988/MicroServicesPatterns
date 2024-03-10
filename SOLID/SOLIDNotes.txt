@@ -1,0 +1,5 @@
+S -Single Responsibility Principle
+O -open closed Principle
+L -Liscov Substitution principle 
+I -Interface Segregation Principle
+D -Depency inversion Principle
