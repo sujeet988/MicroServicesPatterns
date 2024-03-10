@@ -12,7 +12,6 @@ namespace WithStrategyPattern
     {
         public GoodsVehicle(DriveStrategy driveStrategyObject) : base(driveStrategyObject)
         {
-            driveStrategyObject = new NormalDriveStrategy();
         }
     }
 

@@ -11,7 +11,6 @@ namespace WithStrategyPattern
     {
         public OffRoadVehicle(DriveStrategy driveStrategyObject) : base(driveStrategyObject)
         {
-            driveStrategyObject = new SportsDriveStrategy();
         }
     }
 }

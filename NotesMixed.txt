@@ -241,6 +241,8 @@ Has A RelationShip => --->
 Suppose we have a base class called "Vehicle" with a method called "drive." Among the subclasses, the "PassengerVehicle" class requires the standard functionality of the "drive" method. However, the "SportsVehicle" and "OffRoadVehicle" classes need unique functionalities for the "drive" method, specific to their respective classes.
 The problem arises from code duplication in the "SportsVehicle" and "OffRoadVehicle" classes due to the repetition of special functionalities limited to their respective classes. To address this issue, the Strategy Design Pattern can be employed to eliminate the redundancy and improve code readability.
 
+childs having some code , that does not  present in base code
+
 ---
 
 ----M
