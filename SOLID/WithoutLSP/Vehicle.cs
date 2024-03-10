@@ -12,7 +12,7 @@ namespace WithoutLSP
         {
             return 2;
         }
-        public virtual Boolean? HasEngine()
+        public virtual Boolean HasEngine()
         {
             return true;
         }

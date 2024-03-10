@@ -22,7 +22,8 @@
              exception as Bicycle does not  engine.
 
             bicycle  class will break code and this is violation lsp principle as 
-            bicycle does not  have engine so it will break
+            bicycle does not  have engine so it will break.
+
             */
             List<Vehicle> vehiclelist2 = new List<Vehicle>
             {
@@ -31,11 +32,13 @@
                 new Bicycle()
             };
 
-            foreach (var vehicle in vehiclelist)
+            foreach (var vehicle in vehiclelist2)
             {
                 Console.WriteLine(vehicle.HasEngine().ToString());
             }
 
+
+            // SO solution for this put only generic method inside main class  vehicle like  number of wheels
             Console.ReadLine();
 
         }

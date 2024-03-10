@@ -8,9 +8,10 @@ namespace WithoutLSP
 {
     public class Bicycle : Vehicle
     {
-        public override bool? HasEngine()
+        public override bool HasEngine()
         {
-            return null;
+            //return null;
+            throw new NotImplementedException();
         }
 
     }
