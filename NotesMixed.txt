@@ -241,9 +241,22 @@ Has A RelationShip => --->
 Suppose we have a base class called "Vehicle" with a method called "drive." Among the subclasses, the "PassengerVehicle" class requires the standard functionality of the "drive" method. However, the "SportsVehicle" and "OffRoadVehicle" classes need unique functionalities for the "drive" method, specific to their respective classes.
 The problem arises from code duplication in the "SportsVehicle" and "OffRoadVehicle" classes due to the repetition of special functionalities limited to their respective classes. To address this issue, the Strategy Design Pattern can be employed to eliminate the redundancy and improve code readability.
 
-childs having some code , that does not  present in base code
+childs having some code , that does not  present in base code--
 
----
+*Observer Design Pattern Explanation,
+The Observer Design Pattern is a behavioral design pattern that defines a one-to-many 
+dependency between objects so that when one object (the subject) changes state, 
+all its dependents (observers) are notified and updated automatically.
+--Like notfify me feature jn website, like amazon notify me button
+--it conatins two one
+Obserabable- suppoese any state changes of Obserabable then it notify all observer(1 to many)
+observer -
+Obserabable has many observer(1 to manyh relations -has a relationship)
+Observer design  pattern contains three methods
+1.Add
+2. Remove
+3. notify
+
 
 ----M
 
