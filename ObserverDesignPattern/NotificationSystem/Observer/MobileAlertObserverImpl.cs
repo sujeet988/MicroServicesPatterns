@@ -9,8 +9,8 @@ namespace NotificationSystem.Observer
 {
     public class MobileAlertObserverImpl : INotificationAlertObserver
     {
-        string userName;
-        IStocksObservable Observable;
+        private readonly  string userName;
+        private readonly  IStocksObservable Observable;
         public MobileAlertObserverImpl(string emailId, IStocksObservable observable)
         {
             this.userName = emailId;

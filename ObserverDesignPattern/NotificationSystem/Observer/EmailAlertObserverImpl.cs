@@ -9,8 +9,8 @@ namespace NotificationSystem.Observer
 {
     public class EmailAlertObserverImpl : INotificationAlertObserver
     {
-        string emailId;
-        IStocksObservable Observable;
+         private readonly string  emailId;
+         private readonly IStocksObservable Observable;
 
         public EmailAlertObserverImpl( string emailId, IStocksObservable Observable)
         {
