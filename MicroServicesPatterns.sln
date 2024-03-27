@@ -47,7 +47,14 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ObserverDesignPattern", "Ob
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WithoutLSP", "SOLID\WithoutLSP\WithoutLSP.csproj", "{C3DCD358-870D-41FB-A0A1-1F5168FFBA51}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NotificationSystem", "ObserverDesignPattern\NotificationSystem\NotificationSystem.csproj", "{F4D9D157-AED5-4223-87B9-35C5D98B18CC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NotificationSystem", "ObserverDesignPattern\NotificationSystem\NotificationSystem.csproj", "{F4D9D157-AED5-4223-87B9-35C5D98B18CC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "RateLimiter", "RateLimiter", "{F6CB8FDB-9348-4759-B769-527D9902D0C6}"
+	ProjectSection(SolutionItems) = preProject
+		RateLimiter\RateLimterNotes.txt = RateLimiter\RateLimterNotes.txt
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RateLimiterFixedWindowDemo", "RateLimiter\RateLimiterFixedWindowDemo\RateLimiterFixedWindowDemo.csproj", "{05899317-04E3-4316-BCDF-6FDCD026FB54}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -91,6 +98,10 @@ Global
 		{F4D9D157-AED5-4223-87B9-35C5D98B18CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F4D9D157-AED5-4223-87B9-35C5D98B18CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F4D9D157-AED5-4223-87B9-35C5D98B18CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{05899317-04E3-4316-BCDF-6FDCD026FB54}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05899317-04E3-4316-BCDF-6FDCD026FB54}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05899317-04E3-4316-BCDF-6FDCD026FB54}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05899317-04E3-4316-BCDF-6FDCD026FB54}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -103,6 +114,7 @@ Global
 		{8CBDE28C-B470-46A2-BC8E-58D0808420CD} = {6300C51F-705E-4DB2-A7D2-E35B84462FF4}
 		{C3DCD358-870D-41FB-A0A1-1F5168FFBA51} = {1B3F1247-3D6D-4D64-9426-FF896505E084}
 		{F4D9D157-AED5-4223-87B9-35C5D98B18CC} = {F664D8FE-7457-4705-85F2-B1747D475B78}
+		{05899317-04E3-4316-BCDF-6FDCD026FB54} = {F6CB8FDB-9348-4759-B769-527D9902D0C6}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5E8ABA73-DD90-45EA-8A30-EF28D2B95DE7}
