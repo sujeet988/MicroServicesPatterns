@@ -1,4 +1,5 @@
 *Rate limiter
+https://www.geeksforgeeks.org/rate-limiting-in-system-design/
 Rate limiting is a technique for limiting network traffic. 
 It sets a limit on how many requests a client can make to an API within a certain time period. 
 
