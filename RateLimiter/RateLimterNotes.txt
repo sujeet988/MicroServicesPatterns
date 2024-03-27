@@ -1,0 +1,20 @@
+*Rate limiter
+Rate limiting is a technique for limiting network traffic. 
+It sets a limit on how many requests a client can make to an API within a certain time period. 
+
+*Why is rate limiting used?
+Avoid resource starvation due to a Denial of Service (DoS) attack.
+Ensure that servers are not overburdened. Using rate restriction per user
+ensures fair and reasonable use without harming other users.
+Control the flow of information, for example, prevent a single worker from
+accumulating a backlog of unprocessed items while other workers are idle.
+
+*Algorithms to Design a Rate Limiter API
+
+The Token bucket
+Leaky bucket
+Fixed window Counter
+Sliding window logs 
+Sliding window counters. 
+
+

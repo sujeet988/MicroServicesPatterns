@@ -18,5 +18,6 @@ Unit of work
 
 ----
 https://www.c-sharpcorner.com/article/microservices-architecture-pattern-saga/
+https://dotnetcorecentral.com/blog/chain-of-responsibility-pattern/
 
 C:\Users\sujeetkumar\OneDrive - Microsoft\Desktop\DS\MicroServices
