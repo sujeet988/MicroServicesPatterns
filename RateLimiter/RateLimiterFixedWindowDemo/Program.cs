@@ -1,3 +1,5 @@
+using RateLimiterFixedWindowDemo.Middleware;
+
 namespace RateLimiterFixedWindowDemo
 {
     public class Program
@@ -21,6 +23,7 @@ namespace RateLimiterFixedWindowDemo
                 app.UseSwagger();
                 app.UseSwaggerUI();
             }
+            app.UseMiddleware<FixedWindowRateLimitingMiddleware>();
 
             app.UseHttpsRedirection();
 

@@ -19,3 +19,9 @@ Sliding window logs
 Sliding window counters. 
 
 
+Fixed Window Counter :
+A Fixed Window Counter is a simple rate limiting algorithm where you count the number of requests 
+made in a fixed time window. 
+If the count exceeds the limit, further requests are blocked until the window resets.
+Example : in asp.net we can implements this using custom middleware 
+
