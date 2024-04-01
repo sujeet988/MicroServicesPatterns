@@ -8,12 +8,8 @@ namespace ChainResponsibilityDesignPattern
 {
     public class InfoLogProcessor : LogProcessor
     {
-        public InfoLogProcessor(LogProcessor loggerProcessor) : base(loggerProcessor)
+        public override void Log(int logLevel, string message)
         {
-        }
-        public new void Log(int logLevel, String message)
-        {
-
             if (logLevel == INFO)
             {
                 Console.WriteLine("INFO: " + message);
@@ -21,9 +17,8 @@ namespace ChainResponsibilityDesignPattern
             else
             {
 
-                base.Log(logLevel, message);
+                NextHandler.Log(logLevel, message);
             }
-
         }
     }
 }

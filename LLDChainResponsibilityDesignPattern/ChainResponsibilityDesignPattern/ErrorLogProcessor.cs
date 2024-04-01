@@ -8,22 +8,19 @@ namespace ChainResponsibilityDesignPattern
 {
     public class ErrorLogProcessor : LogProcessor
     {
-        public ErrorLogProcessor(LogProcessor loggerProcessor) : base(loggerProcessor)
+        public override void Log(int logLevel, string message)
         {
-        }
-        public new void Log(int logLevel, String message)
-        {
-
             if (logLevel == ERROR)
             {
-               Console.WriteLine("ERROR: " + message);
+                Console.WriteLine("Error: " + message);
             }
             else
             {
-
-                base.Log(logLevel, message);
+                if (NextHandler != null)
+                {
+                    NextHandler.Log(logLevel, message);
+                }
             }
-
         }
     }
 }

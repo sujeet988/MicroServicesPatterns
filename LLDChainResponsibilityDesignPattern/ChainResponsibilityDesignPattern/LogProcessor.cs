@@ -12,18 +12,11 @@ namespace ChainResponsibilityDesignPattern
         public static int DEBUG = 2;
         public static int ERROR = 3;
 
-        LogProcessor nextLoggerProcessor;
-        public LogProcessor(LogProcessor loggerProcessor)
+       public LogProcessor NextHandler;
+        public void SetNextHandler(LogProcessor NextHandler)
         {
-            this.nextLoggerProcessor = loggerProcessor;
+            this.NextHandler = NextHandler;
         }
-        public void Log(int logLevel, String message)
-        {
-
-            if (nextLoggerProcessor != null)
-            {
-                nextLoggerProcessor.Log(logLevel, message);
-            }
-        }
+        public abstract void Log(int logLevel, String message);
     }
 }
