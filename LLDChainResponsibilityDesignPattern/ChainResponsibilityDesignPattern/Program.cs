@@ -16,6 +16,8 @@
             infoLogProcessor.Log(LogProcessor.ERROR, "exception happens");
             infoLogProcessor.Log(LogProcessor.DEBUG, "need to debug this ");
             infoLogProcessor.Log(LogProcessor.INFO, "just for info ");
+            // for none
+            infoLogProcessor.Log(4, "just for info ");
             Console.ReadLine();
         }
     }

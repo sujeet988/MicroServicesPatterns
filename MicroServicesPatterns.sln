@@ -57,8 +57,11 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RateLimiterFixedWindowDemo", "RateLimiter\RateLimiterFixedWindowDemo\RateLimiterFixedWindowDemo.csproj", "{05899317-04E3-4316-BCDF-6FDCD026FB54}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ChainResponsibilityDesignPattern", "ChainResponsibilityDesignPattern", "{B6590151-0599-4C7D-83C5-F5EAA423029D}"
+	ProjectSection(SolutionItems) = preProject
+		LLDChainResponsibilityDesignPattern\Notes.txt = LLDChainResponsibilityDesignPattern\Notes.txt
+	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChainResponsibilityDesignPattern", "LLDChainResponsibilityDesignPattern\ChainResponsibilityDesignPattern\ChainResponsibilityDesignPattern.csproj", "{8388692D-1A2D-4EE5-B028-1850ED49279E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChainResponsibilityDesignPattern", "LLDChainResponsibilityDesignPattern\ChainResponsibilityDesignPattern\ChainResponsibilityDesignPattern.csproj", "{8388692D-1A2D-4EE5-B028-1850ED49279E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
