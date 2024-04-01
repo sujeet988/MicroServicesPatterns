@@ -4,7 +4,7 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            Console.WriteLine("Chain of repsonsibility principle demo");
 
             var infoLogProcessor = new InfoLogProcessor();
             var DebugLogProcessor = new DebugLogProcessor();
