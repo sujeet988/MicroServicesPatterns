@@ -18,6 +18,8 @@
             infoLogProcessor.Log(LogProcessor.INFO, "just for info ");
             // for none
             infoLogProcessor.Log(4, "just for info ");
+
+            
             Console.ReadLine();
         }
     }
