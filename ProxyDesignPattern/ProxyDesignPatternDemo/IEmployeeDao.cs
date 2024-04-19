@@ -8,6 +8,9 @@ namespace ProxyDesignPatternDemo
 {
     public interface IEmployeeDao
     {
+        public void Create(string client, EmployeeDaoModel obj);
+        public void Delete(string client, int  employeeId);
+        public EmployeeDaoModel Get(string client, int employeeId);
 
     }
 }
