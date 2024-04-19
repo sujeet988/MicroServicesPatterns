@@ -1,1 +1,2 @@
 Proxy Design patterns :
+Proxy design pattern is a structural pattern.
