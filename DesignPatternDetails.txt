@@ -1,0 +1,64 @@
+
+https://dotnettutorials.net/lesson/creational-design-pattern/#google_vignette
+
+1. Creational Design Pattern :
+ Creational Design Pattern helps us to centralize the object creation and 
+initialization logic, and depending upon the condition, 
+it will create, initialize, and return the appropriate object to the client. 
+Then, the client can consume the object by calling the necessary methods and 
+properties
+
+Singleton Design Pattern:
+Factory Method Design Pattern:
+Abstract Factory Design Pattern:
+Prototype Design Pattern:
+Builder Design Pattern:
+Fluent Interface Design Pattern i
+
+
+2. Structural Design Patterns.:
+
+In real-time applications, sometimes we need to change the structure of a class 
+or the relationship among the classes but we don’t want this change to be affected 
+by the project. For example, if we have two classes let say User and Product. 
+And the Product class is used inside the User class making one-to-many 
+relationships between the User and Product. Tomorrow, the structure or 
+the relationships between these two classes change. The customer now wants to 
+keep away the Product class from the User class, as they want to use the User 
+and Product class independently. This is actually a structural change and we 
+don’t want this structural change to affect our project. 
+This is where the Structural Design Pattern helps us.
+
+Adapter Design Pattern -done
+Facade Design Pattern
+Decorator Design Pattern
+Bridge Design Pattern
+Composite Design Pattern--design file system
+Proxy Design Pattern--done
+Flyweight Design Pattern
+
+3. Behavioral Design Pattern
+the behavioral design pattern explains how objects interact with each other. It describes how different objects and classes send messages to each other to make things happen and how the steps of a task 
+are divided among different objects.
+
+** When to use Behavioral Design Patterns in C#?
+In real-time applications, sometimes we want to change the behavior of a class, 
+and again, we don’t want it to affect other classes of the project. 
+For example, we have an Invoice class that currently applies taxes as 18%. 
+Tomorrow, if we want to add another extra tax. That means we are changing the
+behavior of a class. The Behavioral Design Pattern comes 
+into the picture to solve such behavioral issues.
+
+1. Strategy Pattern:
+2. Observer Pattern:
+3. Chain of Responsibility Pattern
+4. Visitor Pattern
+5. Iterator Design Pattern:
+6. Interpreter Design Pattern:
+7. Command Design Pattern
+8. Memento Design Pattern:
+9. Mediator Design Pattern: 
+10 State Design Pattern:
+11.Template Method Design Pattern
+
+

@@ -8,6 +8,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Notes", "Notes", "{1AC23907-C060-46AD-8B57-362F9F332666}"
 	ProjectSection(SolutionItems) = preProject
 		CircuitBreakerPatterns.txt = CircuitBreakerPatterns.txt
+		DesignPatternDetails.txt = DesignPatternDetails.txt
 		NotesData.txt = NotesData.txt
 		NotesMixed.txt = NotesMixed.txt
 		SagaDesignPatternNotes.txt = SagaDesignPatternNotes.txt
@@ -66,6 +67,10 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ProxyDesignPattern", "ProxyDesignPattern", "{84428967-BF87-49D2-9203-E0DD80B1F8F3}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProxyDesignPatternDemo", "ProxyDesignPattern\ProxyDesignPatternDemo\ProxyDesignPatternDemo.csproj", "{7D90A21D-BD28-45F3-B46F-E6E9DECA5FC6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AdapterDesignPattern", "AdapterDesignPattern", "{DD8F8168-692F-44CD-9C78-07C9E87A2BA2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NewFolder1", "NewFolder1", "{B713D732-F362-460A-9A32-CB4144853559}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
