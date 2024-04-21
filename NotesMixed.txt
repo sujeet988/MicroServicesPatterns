@@ -136,62 +136,58 @@ CQRS :
 
 -----------------------------
 
-DATA MANAGMENT IN MCRISERVICE
-1.DATAvase for each servcie invidiula (SAGA ,CQRS)
+** DATA MANAGMENT IN MicroService
+1. Database  for each service invidual (SAGA ,CQRS)
 
--- benefit --all servcie can u use different database provide like ,ysql, cosmos db, as per their requiremnt
-issues :
+**benefit:
+all servcie can u use different database provide like ,sql, cosmos db, as per their requiremnt
+**issues :
+ tranaction issues -> solved by SAGA
+ if need data from mutiple tables  means some table in database1  and  some table in database2  -> solve  by cqrs(helping in join )
 
---- tranaction issues --solved by SAGA
---  if need data from mutiple tables  meaans some table in database1  some table in database  --solve  by cqrs(HELPING IN JOIN)
+-----benefit
+-- easy to scale induvidual database
 
------
+2. Database for common for all sevice shared database -NOT MUCHS SUCCESSFULL
+->benefit : ACID (Transaction is mentioned easily)
+ Drawback : 
+ 1. IF ISSUES IN ONE tbale THEN need to DEPLOY ALL TABLES
+ 2.Need to scale table that is no needed ie either all or none
 
---benefict
--- easy to scale invidual database
--- 
-
-
-
-2. database for common for all sevice shared database -NOT MUCHS SUCCESSFULL
--->BENEFIT : ACID (TRANACTION IS MENTIONED EASILY)
- Drawback : IF ISSUES IN ONE  THEN DEPLOY ALL TABLES
- need to scale table that is no needed ie wither all or none
-
----SAGA
+*SAGA
 --SEQUENCE OF LOCAL TRANSACTION
 --FAILURE EVENT SEND BACK IF ANY STEP FAILED SOME THING
-- sAGA IS TOW TYPES
-1.CHREOGRAPHY
+-Saga is of two types or we can say saga can implemented by two approach
 
---dRWAEBACK --CIRCULAR OR CYCLE DEPDENCY CAN MAKRS
--- REQSTES -> [EVENT]-SERVCEI1,SERVCIE2,SERVCI3
+1 Chregography pattern
+ Drawback --CIRCULAR OR CYCLE DEPDENCY CAN MAKRS
+-- REQSTES -> [EVENT]-SERVCEI1 -> SERVCIE2-> SERVCI3
 
-2. ORACHESTRAION
+2. ORACHESTRAION :
+-> 
 
-
---INTERVIEW QUESTION ONTHIS
-PERSION a --NEED TO DO PAYMENT TO PERSON B
+--InterView Question on this
+Person a --NEED TO DO PAYMENT TO Person B
 
 CQRS : COMMAND(CUD) QUERY(sELECT) REQUEST SEGREGATION
 
---CUD will peromED IN SEPEARTE DB BUT  READ OPEARTEION , THERE WILL BE COMMON VIEW OR DATABASE OR HISTORY WHERE ALL TABLES REQUIRED DATA EXSISTS THERE.
---THRIUGHT EVENT WE IMPLEMENT THIS. or thriught db trigger or proecuedure
+--CUD(create,update,delete) will performed in seperate DB BUT  READ OPEARTEION , THERE WILL BE COMMON VIEW OR DATABASE OR HISTORY WHERE ALL TABLES REQUIRED DATA EXSISTS THERE.
+--THRIUGHT EVENT WE IMPLEMENT THIS. or through db trigger or proecuedure
 
 ---class 5
 
 1 single server
-2. application an db server seperation
-3. load balancer +multiple app server
-4   databse replication
-5  cache
+2 application an db server seperation
+3 load balancer +multiple app server
+4 databse replication
+5 cache
 6 CDN
 7 DATA CENTER
 8 MNESSAGING QUEUE
 9 
 
---DB
---MATER DB VS SLAVE OR SLWAEB DB
+*DB
+--Master DB VS SLAVE DB
 --CACHE
 
 TTL : TIME TO LIVE
