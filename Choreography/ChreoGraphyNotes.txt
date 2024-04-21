@@ -2,3 +2,6 @@ ChreoGraphy :
 
 ImportantURL: 
 https://blog.avenuecode.com/saga-pattern-for-microservices-architecture
+https://dev.to/thilanka/choreography-saga-pattern-implementation-1ik2
+https://www.gokhan-gokalp.com/en/implementation-of-choreography-based-saga-in-dotnet-microservices/
+https://learn.microsoft.com/en-us/azure/architecture/reference-architectures/saga/saga
