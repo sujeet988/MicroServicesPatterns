@@ -49,9 +49,9 @@ Tomorrow, if we want to add another extra tax. That means we are changing the
 behavior of a class. The Behavioral Design Pattern comes 
 into the picture to solve such behavioral issues.
 
-1. Strategy Pattern:
-2. Observer Pattern:
-3. Chain of Responsibility Pattern
+1. Strategy Pattern: --done
+2. Observer Pattern: -done
+3. Chain of Responsibility Pattern--done
 4. Visitor Pattern
 5. Iterator Design Pattern:
 6. Interpreter Design Pattern:
