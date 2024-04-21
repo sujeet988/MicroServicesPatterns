@@ -1,0 +1,11 @@
+The Observer Design Pattern is a behavioral design pattern that defines a one-to-many 
+dependency between objects so that when one object (the subject) changes state, 
+all its dependents (observers) are notified and updated automatically.
+--Like notfify me feature jn website, like amazon notify me button
+--it conatins two one
+Obserabable- suppoese any state changes of Obserabable then it notify all observer(1 to many)
+observer -
+Obserabable has many observer(1 to manyh relations -has a relationship)
+Observer design  pattern contains three methods
+1.Add
+2. Remove

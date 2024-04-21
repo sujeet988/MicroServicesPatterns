@@ -229,8 +229,8 @@ Aggegator Pattern
 domain driven benefit 
 discovery  pattern
 request delegate--.net core use map
-cutome middlware --
-cqrs pattern
+cutome middlware --done
+cqrs pattern -done
 
 --Inheritance symbol
 Is A RelationShip => --
