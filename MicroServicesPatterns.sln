@@ -104,6 +104,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileSystemUsingCompositeDes
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProblemStatement", "CompositeDesignPattern\ProblemStatement\ProblemStatement.csproj", "{931E11B1-C658-4C36-8DC5-8882DBD8DDCA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SolutionFileSystemWithCompositeDesign", "CompsiteDesignPattern\SolutionFileSystemWithCompositeDesign\SolutionFileSystemWithCompositeDesign.csproj", "{1DD8A154-6BC0-469F-BB78-DB7FD39B24A9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -170,6 +172,10 @@ Global
 		{931E11B1-C658-4C36-8DC5-8882DBD8DDCA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{931E11B1-C658-4C36-8DC5-8882DBD8DDCA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{931E11B1-C658-4C36-8DC5-8882DBD8DDCA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1DD8A154-6BC0-469F-BB78-DB7FD39B24A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1DD8A154-6BC0-469F-BB78-DB7FD39B24A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1DD8A154-6BC0-469F-BB78-DB7FD39B24A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1DD8A154-6BC0-469F-BB78-DB7FD39B24A9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -190,6 +196,7 @@ Global
 		{20C9B9F7-7A98-457B-9D8C-1BBAF627DB0D} = {FE06FB18-1C26-438A-AC14-A0DF747582E8}
 		{7F8A7FC6-06C3-4DF4-9F96-2C5BD6A5D1BD} = {2BC9DCC2-982A-48BE-83CD-5555E0629756}
 		{931E11B1-C658-4C36-8DC5-8882DBD8DDCA} = {2BC9DCC2-982A-48BE-83CD-5555E0629756}
+		{1DD8A154-6BC0-469F-BB78-DB7FD39B24A9} = {2BC9DCC2-982A-48BE-83CD-5555E0629756}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5E8ABA73-DD90-45EA-8A30-EF28D2B95DE7}
