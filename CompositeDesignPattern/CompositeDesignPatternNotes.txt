@@ -1,0 +1,20 @@
+Composite Design Patterns :
+  it offers a robust solution to the challenges of hierarchical object 
+  representation. Its primary intent is to compose objects into tree structures.
+  --its comes in picture when  object inside object happens example : tree,employee
+  -> Employee-- employmee ceo hierarchicy
+  -> it would like tree like strcuture, then blindly we can say 
+  compostie design patterns
+
+**The pattern consists of three elements:
+Component : a super-class typically an interface
+Composite : a node with children implements Component
+Leaf : a childless node implements Component
+
+** Examples of this :
+1. Design File System
+2. Design Calculator (Arithmetic Expression)
+
+
+--link
+https://dotnetcorecentral.com/blog/composite-pattern/
