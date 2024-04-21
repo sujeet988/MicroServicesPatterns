@@ -107,12 +107,21 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SolutionFileSystemWithCompositeDesign", "CompsiteDesignPattern\SolutionFileSystemWithCompositeDesign\SolutionFileSystemWithCompositeDesign.csproj", "{1DD8A154-6BC0-469F-BB78-DB7FD39B24A9}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "cqrs", "cqrs", "{B8B04D3B-1C9F-4D81-8DC9-0F346F6C7BED}"
+	ProjectSection(SolutionItems) = preProject
+		cqrs\CqrsNotes.txt = cqrs\CqrsNotes.txt
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CqrsDemo", "cqrs\CqrsDemo\CqrsDemo.csproj", "{9E19843F-719C-4BF4-9E6C-5774C903F140}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Choreography", "Choreography", "{0EF0062C-3F9E-497B-9B64-1D655056CA8C}"
+	ProjectSection(SolutionItems) = preProject
+		Choreography\ChreoGraphyNotes.txt = Choreography\ChreoGraphyNotes.txt
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "orchestration", "orchestration", "{CA7AA966-2DAC-4170-8D51-78360FDACFA2}"
+	ProjectSection(SolutionItems) = preProject
+		Orchestration\OrchestraorNotes.txt = Orchestration\OrchestraorNotes.txt
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AsyncVsAwait", "AsyncVsAwait", "{62A05F3B-6629-4FBC-A2D6-56C7CF4B122F}"
 EndProject
