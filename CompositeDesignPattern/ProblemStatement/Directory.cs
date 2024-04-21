@@ -9,7 +9,7 @@ namespace ProblemStatement
     public class Directory
     {
       public  String directoryName;
-        List<Object> objectList;
+        List<Object> objectList; // directory contains file or directory  so creating list
 
         public Directory(String name)
         {
@@ -37,6 +37,11 @@ namespace ProblemStatement
                     ((Directory)obj).ls();
                 }
             }
+            /*
+             * in this approach problem is that we have use to mutiple if else
+               for validate type of  file and cast the object.
+               using composite design pattern  we can solve this problem
+             */
     }
 }
 }

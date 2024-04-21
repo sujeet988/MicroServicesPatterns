@@ -1,3 +1,23 @@
 File Systems:
 
 File and Directory(files or directory)
+
+Notes : 
+  public void ls()
+        {
+            Console.WriteLine("Directory Name: " + directoryName);
+            foreach (Object obj in objectList)
+            {
+
+                if (obj is File)
+                {
+                    ((File)obj).ls();
+                }
+                else if (obj is Directory)
+                {
+                    ((Directory)obj).ls();
+                }
+            }
+* problem : in this approach problem is that we have use to mutiple if else
+  for validate type of  file and cast the object.
+  using composite design pattern  we can solve this problem
