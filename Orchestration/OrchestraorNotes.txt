@@ -4,3 +4,10 @@ Important url :
 MassTransit vs nsericebus
 https://blog.stackademic.com/implementation-of-saga-orchestration-using-masstransit-dd238530f0d7
 https://dgtechboost.com/2020/07/20/azure-service-bus-topic-with-masstransit/
+
+MassTransit:
+MassTransit is an open-source messaging library designed for the .NET ecosystem. 
+It excels in enabling communication and secure data transfer between applications, 
+especially in the realm of asynchronous, distributed applications. 
+In this article, you will explore how to leverage the 
+MassTransit library to build robust and scalable distributed applications.
