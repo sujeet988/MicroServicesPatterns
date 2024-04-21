@@ -11,9 +11,9 @@ Component : a super-class typically an interface
 Composite : a node with children implements Component
 Leaf : a childless node implements Component
 
-** Examples of this :
+** Examples of Composite Design Patterns : :
 1. Design File System
-2. Design Calculator (Arithmetic Expression)
+2. Design Calculator (Arithmetic Expression) etc
 
 
 --link

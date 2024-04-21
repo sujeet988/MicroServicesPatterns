@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace SolutionFileSystemWithCompositeDesign
 {
+    /*
+     * this class is also called leaf operation as there no further child
+     */
     public class File : IFileSystem
     {
         public string fileName { get; set; }

@@ -6,6 +6,10 @@ using System.Threading.Tasks;
 
 namespace SolutionFileSystemWithCompositeDesign
 {
+    /*
+     * this class is also called composite object because it perfrom opeation and Added
+
+     */
     public class Directory : IFileSystem
     {
         string directoryName= string.Empty;
