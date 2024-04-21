@@ -67,6 +67,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ProxyDesignPattern", "Proxy
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AdapterDesignPattern", "AdapterDesignPattern", "{DD8F8168-692F-44CD-9C78-07C9E87A2BA2}"
+	ProjectSection(SolutionItems) = preProject
+		AdapterDesignPattern\AdapterNotes.txt = AdapterDesignPattern\AdapterNotes.txt
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FacadeDesignPattern", "FacadeDesignPattern", "{881ECE6E-65DC-4273-80E4-789BE76392C6}"
 	ProjectSection(SolutionItems) = preProject
