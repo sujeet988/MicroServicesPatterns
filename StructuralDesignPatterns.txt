@@ -16,10 +16,10 @@ Reusability of code increases.
 
 Types:
 
-1.Decorator patterns
-2. Proxy Pattern
-3. Composite Patterns
-4. Adapter pattern
+1. Decorator patterns
+2. Proxy Pattern -done
+3. Composite Patterns -done
+4. Adapter pattern -done
 5. Bridge Pattern
-6  facade
-7 Flyweight
+6  Facade
+7  Flyweight

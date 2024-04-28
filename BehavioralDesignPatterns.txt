@@ -19,9 +19,9 @@ It is used to save the number of resources being used by an application as bette
 
 ** Types:
 1. State Patterns
-2. Oberver pattern
-3. Strategy Pattern
-4. chain of Responsibility Problems
+2. Oberver pattern -done
+3. Strategy Pattern  -done
+4. chain of Responsibility Problems -done
 5  template pattern
 6 Interpreter Pattern
 7 command Pattern
