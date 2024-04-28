@@ -1,2 +1,11 @@
 Builder Design Pattern Notes :
 --it is used when we need to create object step by step
+-> Stringbuilder based on builder Design Patterns
+-> at every step it return mediator object or builder obejct not 
+complete  objects. means home/prodcut is still not ready
+-> like for string builder we have ToString() that returns final object or value.
+-> its reduces complexity of lots of optional paramters.
+->mandatory/optional
+--in build design pattern not support dynamic nature of objetc but in decorator
+  design pattern support.
+  ->
