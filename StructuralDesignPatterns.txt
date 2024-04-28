@@ -1,0 +1,20 @@
+Strcutural Design Patterns:
+-> Strcutural Design Pattern  is a way to combine or arrange different 
+classes and objects to form a  complex or bigger structure to 
+solve a particualr problem
+
+->Structural Design Patterns are concerned with how classes and objects are composed 
+to form larger structures. Structural class patterns use 
+inheritance to compose interfaces or implementations.
+->This pattern is particularly useful for making independently developed class 
+libraries work together
+
+Types:
+
+1.Decorator patterns
+2. Proxy Pattern
+3. Composite Patterns
+4. Adapter pattern
+5. Bridge Pattern
+6  facade
+7 Flyweight
