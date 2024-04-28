@@ -1,0 +1,32 @@
+Behavioral Design Patterns :
+-> Guides how different objects communciate with each other 
+effectively  and distribute task efficiently , making software
+system flexible  and easy to maintain
+
+->Behavioral Patterns are concerned with algorithms and the assignment of 
+responsibilities between objects.
+Behavioral patterns describe not just patterns of objects or classes but 
+also the patterns of communication between them. 
+These patterns characterize complex control flow that’s difficult 
+to follow at run-time.
+
+There are three recurring themes in these patterns:
+
+Behavioral class patterns use inheritance to distribute behavior between classes.
+Behavioral object patterns use object composition rather than inheritance.
+Behavioral object patterns are concerned with encapsulating behavior in an object and delegating requests to it.
+
+** Types:
+1. State Patterns
+2. Oberver pattern
+3. Strategy Pattern
+4. chain of Responsibility Problems
+5  template pattern
+6 Interpreter Pattern
+7 command Pattern
+8 Itertaor Pattern
+9 visitor pattern
+10 Mediator pattern
+11 Momento Pattern
+
+--NOTES https://www.c-sharpcorner.com/article/behavioral-design-patterns-in-c-sharp/
