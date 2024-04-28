@@ -1,0 +1,18 @@
+https://www.youtube.com/watch?v=OuNOyFg942M
+Creational Deisgn Pattern  reponsibility is to create 
+objects/controls the creation  of objects
+
+Types of creational Deisgn patterns :
+
+Protoptype patterns
+Singleton Design Pattern
+Factory Design Pattern
+Abstract Factory Design patterns
+builder Pattern
+
+
+Protoptype patterns :
+it is  used  when we have to make  copy/clone  from exsiting objects
+it is  easy to  implements
+
+

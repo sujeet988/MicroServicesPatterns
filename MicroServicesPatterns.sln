@@ -7,11 +7,14 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CircuitBreaker", "CircuitBr
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Notes", "Notes", "{1AC23907-C060-46AD-8B57-362F9F332666}"
 	ProjectSection(SolutionItems) = preProject
+		BehavioralDesignPatterns.txt = BehavioralDesignPatterns.txt
 		CircuitBreakerPatterns.txt = CircuitBreakerPatterns.txt
+		CreationalDesignPatterns.txt = CreationalDesignPatterns.txt
 		DesignPatternDetails.txt = DesignPatternDetails.txt
 		NotesData.txt = NotesData.txt
 		NotesMixed.txt = NotesMixed.txt
 		SagaDesignPatternNotes.txt = SagaDesignPatternNotes.txt
+		StructuralDesignPatterns.txt = StructuralDesignPatterns.txt
 		system design important concepts .pdf = system design important concepts .pdf
 		UnitOfWorkNotes.txt = UnitOfWorkNotes.txt
 	EndProjectSection
@@ -76,14 +79,14 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FacadeDesignPattern", "Faca
 		FacadeDesignPattern\FacadeNotes.txt = FacadeDesignPattern\FacadeNotes.txt
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FacadeDesignPatternDemo", "FacadeDesignPattern\FacadeDesignPatternDemo\FacadeDesignPatternDemo.csproj", "{79ABA6F7-6A18-41C5-88DD-6F9CDB5D4D03}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FacadeDesignPatternDemo", "FacadeDesignPattern\FacadeDesignPatternDemo\FacadeDesignPatternDemo.csproj", "{79ABA6F7-6A18-41C5-88DD-6F9CDB5D4D03}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DecoratorDesignPattern", "DecoratorDesignPattern", "{0931795E-EE8B-445C-9CA3-51E42EB2EED5}"
 	ProjectSection(SolutionItems) = preProject
 		DecoratorDesignPattern\DecoratorNotes.txt = DecoratorDesignPattern\DecoratorNotes.txt
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdapterDesignPatternDemo", "AdapterDesignPattern\AdapterDesignPatternDemo\AdapterDesignPatternDemo.csproj", "{6B7D9CA9-BE59-4A4D-B70D-64662FBBDE02}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AdapterDesignPatternDemo", "AdapterDesignPattern\AdapterDesignPatternDemo\AdapterDesignPatternDemo.csproj", "{6B7D9CA9-BE59-4A4D-B70D-64662FBBDE02}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProxyDesignPatternDemo", "ProxyDesignPatternDemo\ProxyDesignPatternDemo.csproj", "{E8B78615-CD1B-46DD-8A47-60B92A48A4B8}"
 EndProject
@@ -92,7 +95,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SagaPattern", "SagaPattern"
 		SagaPattern\SagaPatternNotes.txt = SagaPattern\SagaPatternNotes.txt
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SagaPatternDemo", "SagaPattern\SagaPatternDemo\SagaPatternDemo.csproj", "{20C9B9F7-7A98-457B-9D8C-1BBAF627DB0D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SagaPatternDemo", "SagaPattern\SagaPatternDemo\SagaPatternDemo.csproj", "{20C9B9F7-7A98-457B-9D8C-1BBAF627DB0D}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CompositeDesignPattern", "CompositeDesignPattern", "{2BC9DCC2-982A-48BE-83CD-5555E0629756}"
 	ProjectSection(SolutionItems) = preProject
@@ -100,18 +103,18 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CompositeDesignPattern", "C
 		CompositeDesignPattern\FileSystemAndProblems.txt = CompositeDesignPattern\FileSystemAndProblems.txt
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileSystemUsingCompositeDesignPattern", "CompositeDesignPattern\FileSystemUsingCompositeDesignPattern\FileSystemUsingCompositeDesignPattern.csproj", "{7F8A7FC6-06C3-4DF4-9F96-2C5BD6A5D1BD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FileSystemUsingCompositeDesignPattern", "CompositeDesignPattern\FileSystemUsingCompositeDesignPattern\FileSystemUsingCompositeDesignPattern.csproj", "{7F8A7FC6-06C3-4DF4-9F96-2C5BD6A5D1BD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProblemStatement", "CompositeDesignPattern\ProblemStatement\ProblemStatement.csproj", "{931E11B1-C658-4C36-8DC5-8882DBD8DDCA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProblemStatement", "CompositeDesignPattern\ProblemStatement\ProblemStatement.csproj", "{931E11B1-C658-4C36-8DC5-8882DBD8DDCA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SolutionFileSystemWithCompositeDesign", "CompsiteDesignPattern\SolutionFileSystemWithCompositeDesign\SolutionFileSystemWithCompositeDesign.csproj", "{1DD8A154-6BC0-469F-BB78-DB7FD39B24A9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SolutionFileSystemWithCompositeDesign", "CompsiteDesignPattern\SolutionFileSystemWithCompositeDesign\SolutionFileSystemWithCompositeDesign.csproj", "{1DD8A154-6BC0-469F-BB78-DB7FD39B24A9}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "cqrs", "cqrs", "{B8B04D3B-1C9F-4D81-8DC9-0F346F6C7BED}"
 	ProjectSection(SolutionItems) = preProject
 		cqrs\CqrsNotes.txt = cqrs\CqrsNotes.txt
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CqrsDemo", "cqrs\CqrsDemo\CqrsDemo.csproj", "{9E19843F-719C-4BF4-9E6C-5774C903F140}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CqrsDemo", "cqrs\CqrsDemo\CqrsDemo.csproj", "{9E19843F-719C-4BF4-9E6C-5774C903F140}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Choreography", "Choreography", "{0EF0062C-3F9E-497B-9B64-1D655056CA8C}"
 	ProjectSection(SolutionItems) = preProject
@@ -125,9 +128,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "orchestration", "orchestrat
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AsyncVsAwait", "AsyncVsAwait", "{62A05F3B-6629-4FBC-A2D6-56C7CF4B122F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChoreographyDemo", "Choreography\ChoreographyDemo\ChoreographyDemo.csproj", "{4D4447CF-BFD2-46CA-A947-F54B8AC32484}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChoreographyDemo", "Choreography\ChoreographyDemo\ChoreographyDemo.csproj", "{4D4447CF-BFD2-46CA-A947-F54B8AC32484}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrchestrationPatternDemo", "Orchestration\OrchestrationPatternDemo\OrchestrationPatternDemo.csproj", "{632284C2-9540-4CCC-B428-88FFA07091FD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OrchestrationPatternDemo", "Orchestration\OrchestrationPatternDemo\OrchestrationPatternDemo.csproj", "{632284C2-9540-4CCC-B428-88FFA07091FD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ProtoptypePatterns", "ProtoptypePatterns", "{48E8F8FC-F29D-4FBE-9E85-A11DBB9E3E50}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProtoptypePatternsDemo", "ProtoptypePatterns\ProtoptypePatternsDemo\ProtoptypePatternsDemo.csproj", "{6683CAEF-33D8-4520-8EDB-0AF8C05D40E9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProtoptypePatternsFixedIssues", "ProtoptypePatterns\ProtoptypePatternsFixedIssues\ProtoptypePatternsFixedIssues.csproj", "{1EC13B6B-DF39-45BC-A403-A2DDA1BA76DA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -211,6 +220,14 @@ Global
 		{632284C2-9540-4CCC-B428-88FFA07091FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{632284C2-9540-4CCC-B428-88FFA07091FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{632284C2-9540-4CCC-B428-88FFA07091FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6683CAEF-33D8-4520-8EDB-0AF8C05D40E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6683CAEF-33D8-4520-8EDB-0AF8C05D40E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6683CAEF-33D8-4520-8EDB-0AF8C05D40E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6683CAEF-33D8-4520-8EDB-0AF8C05D40E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1EC13B6B-DF39-45BC-A403-A2DDA1BA76DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1EC13B6B-DF39-45BC-A403-A2DDA1BA76DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1EC13B6B-DF39-45BC-A403-A2DDA1BA76DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1EC13B6B-DF39-45BC-A403-A2DDA1BA76DA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -235,6 +252,8 @@ Global
 		{9E19843F-719C-4BF4-9E6C-5774C903F140} = {B8B04D3B-1C9F-4D81-8DC9-0F346F6C7BED}
 		{4D4447CF-BFD2-46CA-A947-F54B8AC32484} = {0EF0062C-3F9E-497B-9B64-1D655056CA8C}
 		{632284C2-9540-4CCC-B428-88FFA07091FD} = {CA7AA966-2DAC-4170-8D51-78360FDACFA2}
+		{6683CAEF-33D8-4520-8EDB-0AF8C05D40E9} = {48E8F8FC-F29D-4FBE-9E85-A11DBB9E3E50}
+		{1EC13B6B-DF39-45BC-A403-A2DDA1BA76DA} = {48E8F8FC-F29D-4FBE-9E85-A11DBB9E3E50}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5E8ABA73-DD90-45EA-8A30-EF28D2B95DE7}

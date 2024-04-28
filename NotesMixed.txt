@@ -272,6 +272,17 @@ Observer design  pattern contains three methods
 ----M
 https://dotnetcorecentral.com/blog/chain-of-responsibility-pattern/
 Bharat Ahuja
+1. All Behavioral Design pattern in 1 shot: All
+https://lnkd.in/gfwN7hTC
+
+2. All Structural Design Patterns in 1 shot:
+https://lnkd.in/dudjBtse
+
+3. All Creational Design Patterns in 1 shot:
+https://lnkd.in/dBbA7Htc
+
+4. SOLID Principles with examples, by seeing which even interviewer will get amazed: 
+https://lnkd.in/dhv98APT
 
 
 
