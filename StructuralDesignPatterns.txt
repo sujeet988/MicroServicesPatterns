@@ -9,6 +9,11 @@ inheritance to compose interfaces or implementations.
 ->This pattern is particularly useful for making independently developed class 
 libraries work together
 
+** What Are the Problems Solved by Structural Design Patterns?
+The structure of the application becomes simplier and clean.
+The efficiency of the application increases.
+Reusability of code increases.
+
 Types:
 
 1.Decorator patterns
