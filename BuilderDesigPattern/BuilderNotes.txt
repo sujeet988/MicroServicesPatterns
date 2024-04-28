@@ -43,7 +43,7 @@ complete  objects. means home/prodcut is still not ready
         }
      
       }
-      -- We can solve this by builder patterns
+      -- We can solve this problem by builder patterns
 
 *With builder Design Patterns
 
