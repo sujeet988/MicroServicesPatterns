@@ -3,18 +3,19 @@ Behavioral Design Patterns :
 effectively  and distribute task efficiently , making software
 system flexible  and easy to maintain
 
-->Behavioral Patterns are concerned with algorithms and the assignment of 
-responsibilities between objects.
-Behavioral patterns describe not just patterns of objects or classes but 
-also the patterns of communication between them. 
-These patterns characterize complex control flow that’s difficult 
-to follow at run-time.
-
 There are three recurring themes in these patterns:
 
 Behavioral class patterns use inheritance to distribute behavior between classes.
 Behavioral object patterns use object composition rather than inheritance.
-Behavioral object patterns are concerned with encapsulating behavior in an object and delegating requests to it.
+Behavioral object patterns are concerned with encapsulating behavior in an object 
+and delegating requests to it.
+
+Problme solved by  Behavioral Design Patterns?
+It reduces the complexity of communication between the objects.
+It provides the best object interaction principles of software development.
+It reduces the coupling between the senders and the receivers and enables better communication flexibility in the application.
+It is used to save the number of resources being used by an application as better object interaction leads to better task execution.
+
 
 ** Types:
 1. State Patterns
@@ -29,4 +30,6 @@ Behavioral object patterns are concerned with encapsulating behavior in an objec
 10 Mediator pattern
 11 Momento Pattern
 
---NOTES https://www.c-sharpcorner.com/article/behavioral-design-patterns-in-c-sharp/
+--NOTES:
+https://www.c-sharpcorner.com/article/behavioral-design-patterns-in-c-sharp/
+https://www.scaler.com/topics/design-patterns/behavioral-pattern/
