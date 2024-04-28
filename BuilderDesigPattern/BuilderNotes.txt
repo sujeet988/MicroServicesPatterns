@@ -6,6 +6,63 @@ complete  objects. means home/prodcut is still not ready
 -> like for string builder we have ToString() that returns final object or value.
 -> its reduces complexity of lots of optional paramters.
 ->mandatory/optional
---in build design pattern not support dynamic nature of objetc but in decorator
+--in build design pattern not support dynamic nature of object but in decorator
   design pattern support.
-  ->
+
+
+ **Without Builder Design pattern
+  -Without Builder Design pattern Multiple constructor need to create
+   if differnt type of object needed
+
+  public class Student
+    {
+        int rollNumber;
+        int age;
+        String name;
+        String fatherName;
+        String motherName;
+        List<String> subjects;
+
+        public Student( int rollNumber,int age)
+        {
+            this.rollNumber = this.rollNumber;
+            this.age = builder.age;
+            this.name = builder.name;
+            this.fatherName = builder.fatherName;
+            this.motherName = builder.motherName;
+            this.subjects = builder.subjects;
+        }
+         public Student( int rollNumber,int age,name) // if need three value the create constructor with three paramters
+        {
+            this.rollNumber = this.rollNumber;
+            this.age = builder.age;
+            this.name = this.name;
+            this.fatherName = builder.fatherName;
+            this.motherName = builder.motherName;
+            this.subjects = builder.subjects;
+        }
+     
+      }
+      -- We can solve this by builder patterns
+
+*With builder Design Patterns
+
+  public class Student
+    {
+        int rollNumber;
+        int age;
+        String name;
+        String fatherName;
+        String motherName;
+        List<String> subjects;
+
+        public Student(StudentBuilder builder)
+        {
+            this.rollNumber = builder.rollNumber;
+            this.age = builder.age;
+            this.name = builder.name;
+            this.fatherName = builder.fatherName;
+            this.motherName = builder.motherName;
+            this.subjects = builder.subjects;
+        }
+      }
