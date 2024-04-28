@@ -11,8 +11,37 @@ Abstract Factory Design patterns
 builder Pattern
 
 
-Protoptype patterns :
+1.Protoptype patterns :
 it is  used  when we have to make  copy/clone  from exsiting objects
-it is  easy to  implements
+it is  easy to  implements.
+
+2. Singleton Design Pattern
+ -> it is used when we have to create ony 1 instance of the class.
+ -> static object related to class not  objects
+ `
+
+
+3. Factory Design pattern
+   -> it is used when all the object creation  and its business logic 
+   -we have to keep it one place
+   --
+
+
+
+4. Abstract Factory Design pattern:
+   -> It is factory Of Factory
+
+
+5. builder pattern
+- > wehn you want create object step by step
+-- example like : suppose we  have to create home. for home creation there are certain
+order like.
+AddRoof()
+AddWall()
+AddWindows()
+etc. When this kind of requirment we using Builder pattern.
+
+
+
 
 
