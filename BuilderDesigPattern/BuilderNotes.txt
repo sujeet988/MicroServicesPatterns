@@ -1,2 +1,2 @@
 Builder Design Pattern Notes :
---
+--it is used when we need to create object step by step
