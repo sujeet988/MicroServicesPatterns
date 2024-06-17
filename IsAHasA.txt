@@ -1,0 +1,22 @@
+IsA -> is an inheritance (parent-child) relationship, 
+HasA ->  is a compositional relationship
+
+Example : Is a = Special kind of e.g. Car is special kind of Vehicle.
+
+class car : Vehicle
+{
+}
+
+Has a = It physically has something, e.g Car has an engine.
+
+class car
+{
+ bool hasengine;
+}
+
+composition -> 
+
+aggregation -> 
+
+
+https://www.geeksforgeeks.org/association-composition-aggregation-java/
