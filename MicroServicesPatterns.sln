@@ -17,6 +17,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Notes", "Notes", "{1AC23907
 		SagaDesignPatternNotes.txt = SagaDesignPatternNotes.txt
 		StructuralDesignPatterns.txt = StructuralDesignPatterns.txt
 		system design important concepts .pdf = system design important concepts .pdf
+		SystemDesignKeyword.docx = SystemDesignKeyword.docx
 		UnitOfWorkNotes.txt = UnitOfWorkNotes.txt
 	EndProjectSection
 EndProject
@@ -144,9 +145,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BuilderDesigPattern", "Buil
 		BuilderDesigPattern\BuilderNotes.txt = BuilderDesigPattern\BuilderNotes.txt
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuilderDesigPatternDemo", "BuilderDesigPattern\BuilderDesigPatternDemo\BuilderDesigPatternDemo.csproj", "{52A273DD-5E5E-49FD-8604-B0F3D4329FB0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BuilderDesigPatternDemo", "BuilderDesigPattern\BuilderDesigPatternDemo\BuilderDesigPatternDemo.csproj", "{52A273DD-5E5E-49FD-8604-B0F3D4329FB0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DecoratorDesignPatternDemo", "DecoratorDesignPattern\DecoratorDesignPatternDemo\DecoratorDesignPatternDemo.csproj", "{F8A70F4F-F425-42A1-B0C6-C343173FD68A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DecoratorDesignPatternDemo", "DecoratorDesignPattern\DecoratorDesignPatternDemo\DecoratorDesignPatternDemo.csproj", "{F8A70F4F-F425-42A1-B0C6-C343173FD68A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

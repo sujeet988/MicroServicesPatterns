@@ -284,6 +284,10 @@ https://lnkd.in/dBbA7Htc
 4. SOLID Principles with examples, by seeing which even interviewer will get amazed: 
 https://lnkd.in/dhv98APT
 
+---Microservices
+https://github.com/johnph?tab=repositories
+https://github.com/johnph/simple-transaction-part2/tree/master/src/Services
+
 
 
 
