@@ -14,7 +14,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Notes", "Notes", "{1AC23907
 		IsAHasA.txt = IsAHasA.txt
 		NotesData.txt = NotesData.txt
 		NotesMixed.txt = NotesMixed.txt
-		SagaDesignPatternNotes.txt = SagaDesignPatternNotes.txt
 		StructuralDesignPatterns.txt = StructuralDesignPatterns.txt
 		system design important concepts .pdf = system design important concepts .pdf
 		SystemDesignKeyword.docx = SystemDesignKeyword.docx

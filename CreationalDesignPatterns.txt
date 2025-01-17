@@ -33,7 +33,7 @@ it is  easy to  implements.
 
 
 5. builder pattern
-- > wehn you want create object step by step
+- > When you want create object step by step
 -- example like : suppose we  have to create home. for home creation there are certain
 order like.
 AddRoof()
