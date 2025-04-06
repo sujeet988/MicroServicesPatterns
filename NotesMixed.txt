@@ -1,183 +1,198 @@
 
 
-----MicroService
---how much small service we can create. there must be some pattern
---differnt phase of microservice
-1. decompostion
-2. database 
-3. communciation
-4. integration
-5. ... and gooes
+Microservices Patterns and Concepts
+Why Patterns in Microservices?
+When creating microservices, we need to follow certain patterns to manage complexity — otherwise, the system becomes hard to scale, manage, and evolve.
 
+Different Phases in Microservices
+Decomposition
 
+Database Management
 
-decompostion patterbs 
-if we monolthinc application we can diuvide 
-1. decomposbe by bussines capalibility or functionality
-2. decompse by sub domomain(ddd)-domain driven design ->
-just we have shopping application
-order deomain and their have mutliple microservceis
-order domain --their microserrvices
+Communication
 
+Integration
 
+Additional considerations
 
+1. Decomposition Patterns
+When breaking a monolithic application into microservices, we can decompose based on:
 
-2. database  : single databse or all have same database
--ddatbase per service or database share service for all
+Business Capabilities
+Divide services by functional areas like Order Management, Inventory, Payment, etc.
 
-3. communciation:
---via api
-- via events
+Subdomains (Domain-Driven Design - DDD)
+Example:
+In a Shopping Application, the Order Domain can have multiple microservices like Order Management, Order Processing, etc.
 
-4. integraee:
--- tghis is increate with otehr app or api gateway
+2. Database Patterns
+Database per Service
+Each microservice manages its own database independently.
 
-5. 
+Shared Database
+Multiple services share a single database (not recommended generally).
 
----pattern
-Strangler pattern :
-REFCATOR THE MICROSERVCEI FROM MONLOTHIC SERVICE
-SLOWLY SLOWLY CONVERTING MONOLTHIC APLTAION TO MICROSERVCEI
+Advantages of Database per Service:
 
-saga  :
+Each service can choose a different database (SQL, Cosmos DB, etc.).
 
+Easier to scale databases individually.
 
-CQRS :
+Challenges:
 
------------------------------
+Transaction management across multiple services (solved by SAGA pattern).
 
-** DATA MANAGMENT IN MicroService
-1. Database  for each service invidual (SAGA ,CQRS)
+Queries spanning multiple databases (solved by CQRS).
 
-**benefit:
-all servcie can u use different database provide like ,sql, cosmos db, as per their requiremnt
-**issues :
- tranaction issues -> solved by SAGA
- if need data from mutiple tables  means some table in database1  and  some table in database2  -> solve  by cqrs(helping in join )
+3. Communication Patterns
+API-based Communication
+Services interact via REST APIs.
 
------benefit
--- easy to scale induvidual database
+Event-based Communication
+Services publish and consume events asynchronously.
 
-2. Database for common for all sevice shared database -NOT MUCHS SUCCESSFULL
-->benefit : ACID (Transaction is mentioned easily)
- Drawback : 
- 1. IF ISSUES IN ONE tbale THEN need to DEPLOY ALL TABLES
- 2.Need to scale table that is no needed ie either all or none
+4. Integration
+API Gateway
+Central entry point for routing requests to respective microservices.
 
-*SAGA
---SEQUENCE OF LOCAL TRANSACTION
---FAILURE EVENT SEND BACK IF ANY STEP FAILED SOME THING
--Saga is of two types or we can say saga can implemented by two approach
+Integration with External Apps
+Using APIs or Messaging Queues.
 
-1 Chregography pattern
- Drawback --CIRCULAR OR CYCLE DEPDENCY CAN MAKRS
--- REQSTES -> [EVENT]-SERVCEI1 -> SERVCIE2-> SERVCI3
+Microservices Migration Pattern
+Strangler Pattern:
+Gradually refactor a monolithic application by creating new microservices around it, slowly replacing parts of the monolith.
 
-2. ORACHESTRAION :
--> 
+Key Design Patterns in Microservices
+SAGA Pattern
+Manages distributed transactions through a sequence of local transactions.
 
---InterView Question on this
-Person a --NEED TO DO PAYMENT TO Person B
+If one transaction fails, compensating actions are triggered to rollback.
 
-CQRS : COMMAND(CUD) QUERY(sELECT) REQUEST SEGREGATION
+Two approaches:
 
---CUD(create,update,delete) will performed in seperate DB BUT  READ OPEARTEION , THERE WILL BE COMMON VIEW OR DATABASE OR HISTORY WHERE ALL TABLES REQUIRED DATA EXSISTS THERE.
---THRIUGHT EVENT WE IMPLEMENT THIS. or through db trigger or proecuedure
+Choreography
+Services communicate by producing and listening to events.
 
----class 5
+Drawback: Risk of cyclic dependencies.
 
-1 single server
-2 application an db server seperation
-3 load balancer +multiple app server
-4 databse replication
-5 cache
-6 CDN
-7 DATA CENTER
-8 MNESSAGING QUEUE
-9 
+Orchestration
+A central controller service manages the transaction flow.
 
-*DB
---Master DB VS SLAVE DB
---CACHE
+CQRS (Command Query Responsibility Segregation)
+Command (Create, Update, Delete) operations handled separately from Query (Read) operations.
 
-TTL : TIME TO LIVE
-CDN DOES CACHING BUT ALL THOSE WHO DOES CACHING  ARE NOT CDN LIKE REDISS CACHE
---CDB SOLVE ISSUES OF LATENCY
---CDN DOES CACHING OF STATIC  DATA LIKE HML,VIDEO, CSS FILE
-- WHEN REQYEST COMEN THEN CODE NEAREST CDN NODES THAT WILL SERVER RQEUEST , IF DATA IS NOT THEN GO TO THE SERVER OR NEAR CDN NODE
---INCREASE PEROFRMANCE  AND SECUIRITY
+Improves performance, scalability, and security.
 
---DATABASE SCALING 
- --TWO TYPES
-1 VBERTICAL SCALING -> 
-CPU CAPABILITY/RAM CAPAILITY --IN LOAD INCEACSE
---BUT THERE IS LIMIT FOR EXTEND
+Data Management in Microservices
+1. Individual Databases for Each Service
+Solves scaling issues.
 
-2.HORIZONTAL SCALING -> 
---MULTIPLE NODEE
--BY SHARDING U CAN IMPLMENT THIS.
---SHADING TWO TYPEX : VERTICAL(column wise) AND HORIZONTAL(row wise)
+Transactions handled via SAGA.
 
+Cross-database queries handled via CQRS.
 
----consistent hashing
+2. Shared Database Across Services
+Simplifies transaction management (ACID compliance).
 
-horzonatl shading --
-virtual objects
-ring
-modulo
-1%n
---
-ankur agarwal
-Millennium 
+Major drawbacks:
 
--Interview Asked
-Aggegator Pattern
-domain driven benefit 
-discovery  pattern
-request delegate--.net core use map
-cutome middlware --done
-cqrs pattern -done
+Coupling between services.
 
---Inheritance symbol
-Is A RelationShip => --
-Has A RelationShip => --->
+Scaling issues.
 
- Strategy Design Pattern :->
+Deployment becomes complex.
 
-Suppose we have a base class called "Vehicle" with a method called "drive." Among the subclasses, the "PassengerVehicle" class requires the standard functionality of the "drive" method. However, the "SportsVehicle" and "OffRoadVehicle" classes need unique functionalities for the "drive" method, specific to their respective classes.
-The problem arises from code duplication in the "SportsVehicle" and "OffRoadVehicle" classes due to the repetition of special functionalities limited to their respective classes. To address this issue, the Strategy Design Pattern can be employed to eliminate the redundancy and improve code readability.
+System Design Concepts
+1. Single Server Architecture
+Basic setup where application and database run on the same server.
 
-childs having some code , that does not  present in base code--
+2. Application and Database Server Separation
+Separate servers for application and database to improve performance.
 
-*Observer Design Pattern Explanation,
-The Observer Design Pattern is a behavioral design pattern that defines a one-to-many 
-dependency between objects so that when one object (the subject) changes state, 
-all its dependents (observers) are notified and updated automatically.
---Like notfify me feature jn website, like amazon notify me button
---it conatins two one
-Obserabable- suppoese any state changes of Obserabable then it notify all observer(1 to many)
-observer -
-Obserabable has many observer(1 to manyh relations -has a relationship)
-Observer design  pattern contains three methods
-1.Add
-2. Remove
-3. notify
+3. Load Balancer with Multiple App Servers
+Distributes incoming traffic across multiple servers.
 
-**The Decorator Design Pattern 
--> allows you to add new functionality to an existing object without altering its structure. 
-   This is done by creating a decorator class that wraps the original class.
--> Real time use case :
- 1.pizza shop-> like base pizza and after this mutiple top like, veggie extra, extra chigg(decorate)
-  base pizaa+extra cheese+mushroom
- 2. cofee
- --base coffe(expressoo) + (cream-Decorator)
- 3.car -> base car + extra feature(seat cover  + ac)\
+4. Database Replication
+Replication for backup and read performance improvement.
 
-  why we need decorator pattern:
- -- class explosion -> this reduce class explosion
- -- reduce multiple class  to less class
- -- it is has-A and ISA-A Relation ship-both
+5. Caching
+Use Redis or other caching layers to store frequently accessed data.
 
+6. Content Delivery Network (CDN)
+CDNs cache static resources like images, videos, CSS to reduce latency.
+
+TTL (Time To Live) defines how long data is cached.
+
+CDN serves content from the nearest node.
+
+7. Data Center
+A physical or virtual infrastructure to house servers and systems.
+
+8. Messaging Queues
+Decouple services using asynchronous communication (e.g., RabbitMQ, Kafka).
+
+Database Scaling
+Vertical Scaling:
+Increase server resources (CPU, RAM) — has physical limits.
+
+Horizontal Scaling (Sharding):
+Distribute data across multiple servers.
+
+Horizontal Sharding: Distribute rows across databases.
+
+Vertical Sharding: Distribute columns across databases.
+
+Consistent Hashing:
+Efficiently distribute data among multiple nodes.
+
+Important Interview Topics
+Aggregator Pattern
+
+Domain-Driven Design (DDD) Benefits
+
+Service Discovery Pattern
+
+Request Delegation (e.g., Map in .NET Core)
+
+Custom Middleware
+
+CQRS Pattern
+
+Important Design Patterns
+Strategy Design Pattern
+Define a family of algorithms and make them interchangeable.
+
+Example: Different drive behaviors for PassengerVehicle, SportsVehicle, OffRoadVehicle.
+
+Observer Design Pattern
+One-to-many dependency between objects.
+
+Example: "Notify Me" feature on Amazon.
+
+Methods:
+
+Add Observer
+
+Remove Observer
+
+Notify Observers
+
+Decorator Design Pattern
+Dynamically add behavior to objects without altering their structure.
+
+Examples:
+
+Pizza Toppings
+
+Coffee Add-ons
+
+Car Accessories
+
+Why use it?
+
+Avoid class explosion.
+
+Maintain "Has-A" and "Is-A" relationships.
 
 ----M
 https://dotnetcorecentral.com/blog/chain-of-responsibility-pattern/
