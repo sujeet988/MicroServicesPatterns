@@ -1,0 +1,47 @@
+** Await :
+
+It is important to realize that await does not mean that the thread will have to be blocked waiting for the operation. 
+Await means the thread is free to go to do another thing and then he will come back when this operation 
+(in our example Task.Dealy i.e. after 10 seconds) is done. The following example code exactly does the same thing.
+
+ public async static void SomeMethod()
+        {
+            Console.WriteLine("Some Method Started......");
+            //Thread.Sleep(TimeSpan.FromSeconds(10));
+            await Task.Delay(TimeSpan.FromSeconds(10));
+            Console.WriteLine("\n");
+            Console.WriteLine("Some Method End");
+        }
+
+** Thread.Sleep :
+Thread.Sleep is a blocking call. It will block the current thread for the specified time.
+** Example Code : Thread.Sleep(5000) -- its is obviously a blocking call. so it is not recommended to use it in async methods.
+so better to use await Task.Delay(5000) instead.
+
+** Task.Delay :
+Task.Delay is a non-blocking call. It will not block the current thread, but it will return a Task that will complete after the specified time.
+** Example Code : await Task.Delay(5000) -- it is a non-blocking call. so it is recommended to use it in async methods.
+
+**
+ public async static void SomeMethod()
+        {
+            Console.WriteLine("Some Method Started......");
+            //Thread.Sleep(TimeSpan.FromSeconds(10));
+            Task.Delay(TimeSpan.FromSeconds(10));
+            Console.WriteLine("\n");
+            Console.WriteLine("Some Method End");
+        }
+        This code will not wait for the Task.Delay to complete, so it will print "Some Method End" 
+        immediately after "Some Method Started......".
+        To make it wait, you need to use await like this:
+        ```csharp
+        public async static void SomeMethod()
+		{
+			Console.WriteLine("Some Method Started......");
+			await Task.Delay(TimeSpan.FromSeconds(10));
+			Console.WriteLine("\n");
+			Console.WriteLine("Some Method End");
+		}
+		```
+
+
