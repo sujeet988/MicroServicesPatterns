@@ -5,22 +5,6 @@ VisualStudioVersion = 17.4.34408.133
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CircuitBreaker", "CircuitBreaker", "{0FA8D0A8-7E65-45F0-B14E-11E0ED86A4E1}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Notes", "Notes", "{1AC23907-C060-46AD-8B57-362F9F332666}"
-	ProjectSection(SolutionItems) = preProject
-		BehavioralDesignPatterns.txt = BehavioralDesignPatterns.txt
-		CircuitBreakerPatterns.txt = CircuitBreakerPatterns.txt
-		CreationalDesignPatterns.txt = CreationalDesignPatterns.txt
-		DesignPatternDetails.txt = DesignPatternDetails.txt
-		DesignPatternsAllDetails.txt = DesignPatternsAllDetails.txt
-		DesignPatternsNotes.md = DesignPatternsNotes.md
-		IsAHasA.txt = IsAHasA.txt
-		NotesData.txt = NotesData.txt
-		NotesMixed.txt = NotesMixed.txt
-		StructuralDesignPatterns.txt = StructuralDesignPatterns.txt
-		system design important concepts .pdf = system design important concepts .pdf
-		UnitOfWorkNotes.txt = UnitOfWorkNotes.txt
-	EndProjectSection
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CircuitBreakerWithOutPolly", "CircuitBreakerWithOutPolly\CircuitBreakerWithOutPolly.csproj", "{2AF734BB-563C-475F-B3D6-BF6DC3A1E8A4}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UnitOfWork", "UnitOfWork", "{DC004310-3502-4A7A-8B0C-FEB2A93634A8}"
