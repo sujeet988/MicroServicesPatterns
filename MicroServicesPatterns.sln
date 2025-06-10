@@ -106,6 +106,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "orchestration", "orchestrat
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AsyncVsAwait", "AsyncVsAwait", "{62A05F3B-6629-4FBC-A2D6-56C7CF4B122F}"
+	ProjectSection(SolutionItems) = preProject
+		AsyncVsAwait\AsyncVsAwait.txt = AsyncVsAwait\AsyncVsAwait.txt
+	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChoreographyDemo", "Choreography\ChoreographyDemo\ChoreographyDemo.csproj", "{4D4447CF-BFD2-46CA-A947-F54B8AC32484}"
 EndProject
