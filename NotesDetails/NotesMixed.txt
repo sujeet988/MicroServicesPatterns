@@ -1,0 +1,219 @@
+
+
+Microservices Patterns and Concepts
+Why Patterns in Microservices?
+When creating microservices, we need to follow certain patterns to manage complexity — otherwise, the system becomes hard to scale, manage, and evolve.
+
+Different Phases in Microservices
+Decomposition
+
+Database Management
+
+Communication
+
+Integration
+
+Additional considerations
+
+1. Decomposition Patterns
+When breaking a monolithic application into microservices, we can decompose based on:
+
+Business Capabilities
+Divide services by functional areas like Order Management, Inventory, Payment, etc.
+
+Subdomains (Domain-Driven Design - DDD)
+Example:
+In a Shopping Application, the Order Domain can have multiple microservices like Order Management, Order Processing, etc.
+
+2. Database Patterns
+Database per Service
+Each microservice manages its own database independently.
+
+Shared Database
+Multiple services share a single database (not recommended generally).
+
+Advantages of Database per Service:
+
+Each service can choose a different database (SQL, Cosmos DB, etc.).
+
+Easier to scale databases individually.
+
+Challenges:
+
+Transaction management across multiple services (solved by SAGA pattern).
+
+Queries spanning multiple databases (solved by CQRS).
+
+3. Communication Patterns
+API-based Communication
+Services interact via REST APIs.
+
+Event-based Communication
+Services publish and consume events asynchronously.
+
+4. Integration
+API Gateway
+Central entry point for routing requests to respective microservices.
+
+Integration with External Apps
+Using APIs or Messaging Queues.
+
+Microservices Migration Pattern
+Strangler Pattern:
+Gradually refactor a monolithic application by creating new microservices around it, slowly replacing parts of the monolith.
+
+Key Design Patterns in Microservices
+SAGA Pattern
+Manages distributed transactions through a sequence of local transactions.
+
+If one transaction fails, compensating actions are triggered to rollback.
+
+Two approaches:
+
+Choreography
+Services communicate by producing and listening to events.
+
+Drawback: Risk of cyclic dependencies.
+
+Orchestration
+A central controller service manages the transaction flow.
+
+CQRS (Command Query Responsibility Segregation)
+Command (Create, Update, Delete) operations handled separately from Query (Read) operations.
+
+Improves performance, scalability, and security.
+
+Data Management in Microservices
+1. Individual Databases for Each Service
+Solves scaling issues.
+
+Transactions handled via SAGA.
+
+Cross-database queries handled via CQRS.
+
+2. Shared Database Across Services
+Simplifies transaction management (ACID compliance).
+
+Major drawbacks:
+
+Coupling between services.
+
+Scaling issues.
+
+Deployment becomes complex.
+
+System Design Concepts
+1. Single Server Architecture
+Basic setup where application and database run on the same server.
+
+2. Application and Database Server Separation
+Separate servers for application and database to improve performance.
+
+3. Load Balancer with Multiple App Servers
+Distributes incoming traffic across multiple servers.
+
+4. Database Replication
+Replication for backup and read performance improvement.
+
+5. Caching
+Use Redis or other caching layers to store frequently accessed data.
+
+6. Content Delivery Network (CDN)
+CDNs cache static resources like images, videos, CSS to reduce latency.
+
+TTL (Time To Live) defines how long data is cached.
+
+CDN serves content from the nearest node.
+
+7. Data Center
+A physical or virtual infrastructure to house servers and systems.
+
+8. Messaging Queues
+Decouple services using asynchronous communication (e.g., RabbitMQ, Kafka).
+
+Database Scaling
+Vertical Scaling:
+Increase server resources (CPU, RAM) — has physical limits.
+
+Horizontal Scaling (Sharding):
+Distribute data across multiple servers.
+
+Horizontal Sharding: Distribute rows across databases.
+
+Vertical Sharding: Distribute columns across databases.
+
+Consistent Hashing:
+Efficiently distribute data among multiple nodes.
+
+Important Interview Topics
+Aggregator Pattern
+
+Domain-Driven Design (DDD) Benefits
+
+Service Discovery Pattern
+
+Request Delegation (e.g., Map in .NET Core)
+
+Custom Middleware
+
+CQRS Pattern
+
+Important Design Patterns
+Strategy Design Pattern
+Define a family of algorithms and make them interchangeable.
+
+Example: Different drive behaviors for PassengerVehicle, SportsVehicle, OffRoadVehicle.
+
+Observer Design Pattern
+One-to-many dependency between objects.
+
+Example: "Notify Me" feature on Amazon.
+
+Methods:
+
+Add Observer
+
+Remove Observer
+
+Notify Observers
+
+Decorator Design Pattern
+Dynamically add behavior to objects without altering their structure.
+
+Examples:
+
+Pizza Toppings
+
+Coffee Add-ons
+
+Car Accessories
+
+Why use it?
+
+Avoid class explosion.
+
+Maintain "Has-A" and "Is-A" relationships.
+
+----M
+https://dotnetcorecentral.com/blog/chain-of-responsibility-pattern/
+Bharat Ahuja
+1. All Behavioral Design pattern in 1 shot: All
+https://lnkd.in/gfwN7hTC
+
+2. All Structural Design Patterns in 1 shot:
+https://lnkd.in/dudjBtse
+
+3. All Creational Design Patterns in 1 shot:
+https://lnkd.in/dBbA7Htc
+
+4. SOLID Principles with examples, by seeing which even interviewer will get amazed: 
+https://lnkd.in/dhv98APT
+
+---Microservices
+https://github.com/johnph?tab=repositories
+https://github.com/johnph/simple-transaction-part2/tree/master/src/Services
+
+
+
+
+

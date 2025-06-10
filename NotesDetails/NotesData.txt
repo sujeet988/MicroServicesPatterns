@@ -1,0 +1,23 @@
+--Oreaaly
+.NET Core Microservices - The Complete Guide (.NET 6 MVC)
+Continue
+Moving right along. Good job.
+
+11h 50m remaining
+
+With your instructor
+
+Bhrugen Patel --beast for microservices
+Bhrugen Patel
+oreaaly and udemy
+-----------Design Patterns of microservices
+Database patterns
+Saga Pattern implemented by : Choreography(ServiceBus) or orchestration
+Circuit Breaker Pattern => using polly
+Unit of work
+
+----
+https://www.c-sharpcorner.com/article/microservices-architecture-pattern-saga/
+https://dotnetcorecentral.com/blog/chain-of-responsibility-pattern/
+
+C:\Users\sujeetkumar\OneDrive - Microsoft\Desktop\DS\MicroServices
