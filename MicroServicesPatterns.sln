@@ -55,11 +55,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ProxyDesignPattern", "Proxy
 		ProxyDesignPattern\ProxyDesignPatternNotes.txt = ProxyDesignPattern\ProxyDesignPatternNotes.txt
 	EndProjectSection
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AdapterDesignPattern", "AdapterDesignPattern", "{DD8F8168-692F-44CD-9C78-07C9E87A2BA2}"
-	ProjectSection(SolutionItems) = preProject
-		AdapterDesignPattern\AdapterNotes.txt = AdapterDesignPattern\AdapterNotes.txt
-	EndProjectSection
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FacadeDesignPattern", "FacadeDesignPattern", "{881ECE6E-65DC-4273-80E4-789BE76392C6}"
 	ProjectSection(SolutionItems) = preProject
 		FacadeDesignPattern\FacadeNotes.txt = FacadeDesignPattern\FacadeNotes.txt
@@ -71,8 +66,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DecoratorDesignPattern", "D
 	ProjectSection(SolutionItems) = preProject
 		DecoratorDesignPattern\DecoratorNotes.txt = DecoratorDesignPattern\DecoratorNotes.txt
 	EndProjectSection
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AdapterDesignPatternDemo", "AdapterDesignPattern\AdapterDesignPatternDemo\AdapterDesignPatternDemo.csproj", "{6B7D9CA9-BE59-4A4D-B70D-64662FBBDE02}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProxyDesignPatternDemo", "ProxyDesignPatternDemo\ProxyDesignPatternDemo.csproj", "{E8B78615-CD1B-46DD-8A47-60B92A48A4B8}"
 EndProject
@@ -143,6 +136,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FactoryDesignPatternsDemo",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FactoryDesignPatterns", "CreationalDesignPatterns\FactoryDesignPatterns\FactoryDesignPatterns.csproj", "{BA409163-A14C-410A-9299-1F0CA40C7AFB}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "StructuralDesignPatterns", "StructuralDesignPatterns", "{9EFC099E-5F84-4FFC-BC11-5619B3C0B745}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -189,10 +184,6 @@ Global
 		{79ABA6F7-6A18-41C5-88DD-6F9CDB5D4D03}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{79ABA6F7-6A18-41C5-88DD-6F9CDB5D4D03}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{79ABA6F7-6A18-41C5-88DD-6F9CDB5D4D03}.Release|Any CPU.Build.0 = Release|Any CPU
-		{6B7D9CA9-BE59-4A4D-B70D-64662FBBDE02}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6B7D9CA9-BE59-4A4D-B70D-64662FBBDE02}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6B7D9CA9-BE59-4A4D-B70D-64662FBBDE02}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6B7D9CA9-BE59-4A4D-B70D-64662FBBDE02}.Release|Any CPU.Build.0 = Release|Any CPU
 		{E8B78615-CD1B-46DD-8A47-60B92A48A4B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{E8B78615-CD1B-46DD-8A47-60B92A48A4B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E8B78615-CD1B-46DD-8A47-60B92A48A4B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -268,7 +259,6 @@ Global
 		{05899317-04E3-4316-BCDF-6FDCD026FB54} = {F6CB8FDB-9348-4759-B769-527D9902D0C6}
 		{8388692D-1A2D-4EE5-B028-1850ED49279E} = {B6590151-0599-4C7D-83C5-F5EAA423029D}
 		{79ABA6F7-6A18-41C5-88DD-6F9CDB5D4D03} = {881ECE6E-65DC-4273-80E4-789BE76392C6}
-		{6B7D9CA9-BE59-4A4D-B70D-64662FBBDE02} = {DD8F8168-692F-44CD-9C78-07C9E87A2BA2}
 		{E8B78615-CD1B-46DD-8A47-60B92A48A4B8} = {84428967-BF87-49D2-9203-E0DD80B1F8F3}
 		{20C9B9F7-7A98-457B-9D8C-1BBAF627DB0D} = {FE06FB18-1C26-438A-AC14-A0DF747582E8}
 		{7F8A7FC6-06C3-4DF4-9F96-2C5BD6A5D1BD} = {2BC9DCC2-982A-48BE-83CD-5555E0629756}
