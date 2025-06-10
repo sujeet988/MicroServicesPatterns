@@ -1,0 +1,49 @@
+•	Process:
+An independent program running on your computer. Each process has its own memory and resources.
+every  app once started runs in a process. called process
+•	Thread:
+A lightweight unit of execution within a process. Threads in the same process share memory and resources.
+
+•	Task (in .NET):
+An object that represents an asynchronous operation. A task may run on a thread, but 
+it’s a higher-level way to manage work that might be done in the background.
+
+A task is a unit of work or an activity that needs to be done. It represents something that can be started, 
+tracked, and completed, often independently of other work. In programming, a task is a way to organize and 
+manage operations that might take some time, like downloading a file or processing data
+
+
+Analogy:
+•	Process = House:
+Each house is separate and has its own address and rooms. Houses don’t share space with each other.
+•	Thread = Person in the House:
+Each person (thread) can move around and do things inside the house. All people in the same house can talk to each other and share things (like the kitchen or living room).
+•	Task = Chore:
+A chore (task) is a job that a person does, like washing dishes or vacuuming.
+•	Sometimes, people do chores at the same time (in parallel).
+•	Sometimes, a person waits for another to finish before starting their own chore.
+
+Summary:
+•	The house (process) keeps everything together and separate from other houses.
+•	People (threads) do the work inside the house.
+•	Chores (tasks) are the actual jobs that need to get done, and people (threads) perform them.
+
+** Thread vs Task in .NET:
+A thread executes a task.
+•	The thread is the worker (the person).
+•	The task is the work to be done (the chore).
+In .NET and most programming environments, when you start a task, it is scheduled to run on a thread (either a new one or from a thread pool). The thread does the actual execution of the task’s code.
+Summary:
+•	Thread runs (executes) the task.
+•	A task cannot run by itself; it needs a thread to execute it.
+
+** Thread vs Task in .NET:
+Yes, a process can have multiple threads.
+•	Each thread runs independently but shares the process’s memory and resources.
+A thread cannot perform multiple tasks at the exact same time.
+•	A thread can only execute one instruction at a time.
+•	However, a thread can switch between tasks quickly (multitasking), but at any moment, it’s only doing one thing
+
+** A task is like a chore—it’s a specific piece of work (such as downloading data or processing a file) 
+that a thread (the person) will do.
+

@@ -109,6 +109,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AsyncVsAwait", "AsyncVsAwai
 	ProjectSection(SolutionItems) = preProject
 		AsyncVsAwait\AsyncVsAwait.txt = AsyncVsAwait\AsyncVsAwait.txt
 		AsyncVsAwait\AwaitKeyWord.txt = AsyncVsAwait\AwaitKeyWord.txt
+		AsyncVsAwait\Thread vs Process vs Task.txt = AsyncVsAwait\Thread vs Process vs Task.txt
 	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChoreographyDemo", "Choreography\ChoreographyDemo\ChoreographyDemo.csproj", "{4D4447CF-BFD2-46CA-A947-F54B8AC32484}"
