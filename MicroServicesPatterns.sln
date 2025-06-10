@@ -151,6 +151,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UnitTestsWIthNUnit", "UnitT
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FactoryDesignPatternsUnitTestsWIthMsTest", "UnitTestsWIthMsTest\FactoryDesignPatternsUnitTestsWIthMsTest\FactoryDesignPatternsUnitTestsWIthMsTest.csproj", "{41E13B04-9776-40DB-86D0-97667EDCDAFA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsyncAwaitTask", "AsyncVsAwait\AsyncAwaitTask\AsyncAwaitTask.csproj", "{11B2DEBB-1212-4342-B239-ED435402C86B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -261,6 +263,10 @@ Global
 		{41E13B04-9776-40DB-86D0-97667EDCDAFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{41E13B04-9776-40DB-86D0-97667EDCDAFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{41E13B04-9776-40DB-86D0-97667EDCDAFA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{11B2DEBB-1212-4342-B239-ED435402C86B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11B2DEBB-1212-4342-B239-ED435402C86B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11B2DEBB-1212-4342-B239-ED435402C86B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11B2DEBB-1212-4342-B239-ED435402C86B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -292,6 +298,7 @@ Global
 		{BED57719-21E4-4DAF-97EF-51AF37C4B101} = {9EFC099E-5F84-4FFC-BC11-5619B3C0B745}
 		{98132DD9-87BA-4538-885A-1FD5DD9760BA} = {84F85737-DC99-4F8D-98A2-2C6EB3089170}
 		{41E13B04-9776-40DB-86D0-97667EDCDAFA} = {02969718-C0DC-4F9D-9A2D-D3CD4B3D1053}
+		{11B2DEBB-1212-4342-B239-ED435402C86B} = {62A05F3B-6629-4FBC-A2D6-56C7CF4B122F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5E8ABA73-DD90-45EA-8A30-EF28D2B95DE7}
