@@ -12,13 +12,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Notes", "Notes", "{1AC23907
 		CreationalDesignPatterns.txt = CreationalDesignPatterns.txt
 		DesignPatternDetails.txt = DesignPatternDetails.txt
 		DesignPatternsAllDetails.txt = DesignPatternsAllDetails.txt
-		..\..\..\Downloads\design_patterns_in_csharp.pdf = ..\..\..\Downloads\design_patterns_in_csharp.pdf
+		DesignPatternsNotes.md = DesignPatternsNotes.md
 		IsAHasA.txt = IsAHasA.txt
 		NotesData.txt = NotesData.txt
 		NotesMixed.txt = NotesMixed.txt
 		StructuralDesignPatterns.txt = StructuralDesignPatterns.txt
 		system design important concepts .pdf = system design important concepts .pdf
-		SystemDesignKeyword.docx = SystemDesignKeyword.docx
 		UnitOfWorkNotes.txt = UnitOfWorkNotes.txt
 	EndProjectSection
 EndProject
