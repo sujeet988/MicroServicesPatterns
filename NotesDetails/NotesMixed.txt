@@ -2,20 +2,20 @@
 
 Microservices Patterns and Concepts
 Why Patterns in Microservices?
-When creating microservices, we need to follow certain patterns to manage complexity — otherwise, the system becomes hard to scale, manage, and evolve.
+When creating microservices, we need to follow certain patterns to manage complexity — 
+otherwise, the system becomes hard to scale, manage, and evolve.
 
 Different Phases in Microservices
 Decomposition
-
 Database Management
-
 Communication
 
 Integration
 
 Additional considerations
 
-1. Decomposition Patterns
+1. Decomposition Patterns :
+
 When breaking a monolithic application into microservices, we can decompose based on:
 
 Business Capabilities
@@ -23,7 +23,8 @@ Divide services by functional areas like Order Management, Inventory, Payment, e
 
 Subdomains (Domain-Driven Design - DDD)
 Example:
-In a Shopping Application, the Order Domain can have multiple microservices like Order Management, Order Processing, etc.
+In a Shopping Application, the Order Domain can have multiple microservices like Order Management, 
+Order Processing, etc.
 
 2. Database Patterns
 Database per Service
@@ -32,7 +33,7 @@ Each microservice manages its own database independently.
 Shared Database
 Multiple services share a single database (not recommended generally).
 
-Advantages of Database per Service:
+*Advantages of Database per Service:
 
 Each service can choose a different database (SQL, Cosmos DB, etc.).
 
@@ -45,24 +46,26 @@ Transaction management across multiple services (solved by SAGA pattern).
 Queries spanning multiple databases (solved by CQRS).
 
 3. Communication Patterns
-API-based Communication
-Services interact via REST APIs.
+ API-based Communication
+ Services interact via REST APIs.
 
-Event-based Communication
-Services publish and consume events asynchronously.
+ Event-based Communication
+ Services publish and consume events asynchronously.
 
 4. Integration
-API Gateway
-Central entry point for routing requests to respective microservices.
+   API Gateway
+ Central entry point for routing requests to respective microservices.
 
 Integration with External Apps
 Using APIs or Messaging Queues.
 
-Microservices Migration Pattern
+**Microservices Migration Pattern
 Strangler Pattern:
-Gradually refactor a monolithic application by creating new microservices around it, slowly replacing parts of the monolith.
+Gradually refactor a monolithic application by creating new microservices around it, 
+slowly replacing parts of the monolith.
 
-Key Design Patterns in Microservices
+Key Design Patterns in Microservices:
+
 SAGA Pattern
 Manages distributed transactions through a sequence of local transactions.
 
@@ -70,12 +73,12 @@ If one transaction fails, compensating actions are triggered to rollback.
 
 Two approaches:
 
-Choreography
+1. Choreography
 Services communicate by producing and listening to events.
 
 Drawback: Risk of cyclic dependencies.
 
-Orchestration
+2. Orchestration
 A central controller service manages the transaction flow.
 
 CQRS (Command Query Responsibility Segregation)
@@ -156,7 +159,7 @@ Request Delegation (e.g., Map in .NET Core)
 
 Custom Middleware
 
-CQRS Pattern
+**CQRS Pattern
 
 Important Design Patterns
 Strategy Design Pattern
@@ -209,9 +212,6 @@ https://lnkd.in/dBbA7Htc
 4. SOLID Principles with examples, by seeing which even interviewer will get amazed: 
 https://lnkd.in/dhv98APT
 
----Microservices
-https://github.com/johnph?tab=repositories
-https://github.com/johnph/simple-transaction-part2/tree/master/src/Services
 
 
 

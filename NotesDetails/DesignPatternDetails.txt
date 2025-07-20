@@ -38,7 +38,8 @@ Proxy Design Pattern--done
 Flyweight Design Pattern
 
 3. Behavioral Design Pattern
-the behavioral design pattern explains how objects interact with each other. It describes how different objects and classes send messages to each other to make things happen and how the steps of a task 
+the behavioral design pattern explains how objects interact with each other. It describes how different 
+objects and classes send messages to each other to make things happen and how the steps of a task 
 are divided among different objects.
 
 ** When to use Behavioral Design Patterns in C#?

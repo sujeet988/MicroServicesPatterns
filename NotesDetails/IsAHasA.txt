@@ -14,9 +14,5 @@ class car
  bool hasengine;
 }
 
-composition -> 
-
-aggregation -> 
-association, aggregation and composition
-
+** association, aggregation and composition
 https://www.geeksforgeeks.org/association-composition-aggregation-java/

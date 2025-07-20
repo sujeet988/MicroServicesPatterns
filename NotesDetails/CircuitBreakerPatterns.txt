@@ -1,36 +1,30 @@
 Circuit Breaker pattern :
+The Circuit Breaker pattern prevents an application from repeatedly calling a failing service, 
+improving stability and resilience — especially in distributed systems.
 
-Circuit Breaker Pattern (Simplified)
-The Circuit Breaker pattern prevents an application from repeatedly calling a failing service, improving stability and resilience — especially in distributed systems.
-
-States:
+Circuit Breaker States:
 Closed – Normal flow; all requests pass through.
-
 Open – Requests are blocked after too many failures.
-
 Half-Open – Limited test requests are allowed to check recovery.
 
 Key Concepts:
 Failure Thresholds
-
 Timers for state transition
-
 Monitoring
-
 Fallbacks
-
 Auto-Recovery
 
 Real-Time Example:
-Saving data to Azure Blob Storage — if storage is down, the circuit breaker avoids repeated failed attempts and can trigger fallback logic.
+Saving data to Azure Blob Storage — if storage is down, the circuit breaker avoids repeated failed 
+attempts and can trigger fallback logic.
 
 Implementation in .NET Core:
 Approach 1: Manual implementation without any NuGet package.
 
-Approach 2: Using Polly – a powerful .NET library for resilience patterns like Retry, Circuit Breaker, Timeout, etc.
+Approach 2: Using Polly – a powerful .NET library for resilience patterns like Retry, Circuit Breaker, 
+Timeout, etc.
 
 Polly offers an easy and fluent way to apply these patterns in a thread-safe manner
-
 
 --Retry api
 https://github.com/therealjordanlee/RetryApi/tree/master/RetryApi

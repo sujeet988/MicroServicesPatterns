@@ -13,8 +13,10 @@ and delegating requests to it.
 Problme solved by  Behavioral Design Patterns?
 It reduces the complexity of communication between the objects.
 It provides the best object interaction principles of software development.
-It reduces the coupling between the senders and the receivers and enables better communication flexibility in the application.
-It is used to save the number of resources being used by an application as better object interaction leads to better task execution.
+It reduces the coupling between the senders and the receivers and enables better communication flexibility
+in the application.
+It is used to save the number of resources being used by an application as better object interaction leads 
+to better task execution.
 
 
 ** Types:

@@ -1,5 +1,5 @@
-https://www.youtube.com/watch?v=OuNOyFg942M
-Creational Deisgn Pattern  reponsibility is to create 
+Creational Deisgn Pattern:
+Reponsibility is to create 
 objects/controls the creation  of objects
 
 Types of creational Deisgn patterns :
@@ -24,17 +24,14 @@ it is  easy to  implements.
 3. Factory Design pattern
    -> it is used when all the object creation  and its business logic 
    -we have to keep it one place
-   --
-
-
 
 4. Abstract Factory Design pattern:
    -> It is factory Of Factory
 
 
 5. builder pattern
-- > When you want create object step by step
--- example like : suppose we  have to create home. for home creation there are certain
+-> When you want create object step by step
+example like : suppose we  have to create home. for home creation there are certain
 order like.
 AddRoof()
 AddWall()
