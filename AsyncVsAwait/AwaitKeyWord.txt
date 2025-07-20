@@ -15,12 +15,15 @@ Await means the thread is free to go to do another thing and then he will come b
 
 ** Thread.Sleep :
 Thread.Sleep is a blocking call. It will block the current thread for the specified time.
-** Example Code : Thread.Sleep(5000) -- its is obviously a blocking call. so it is not recommended to use it in async methods.
+** Example Code : Thread.Sleep(5000) -- its is obviously a blocking call. so it is not recommended to 
+use it in async methods.
 so better to use await Task.Delay(5000) instead.
 
 ** Task.Delay :
-Task.Delay is a non-blocking call. It will not block the current thread, but it will return a Task that will complete after the specified time.
-** Example Code : await Task.Delay(5000) -- it is a non-blocking call. so it is recommended to use it in async methods.
+Task.Delay is a non-blocking call. It will not block the current thread, but it will return a Task that 
+will complete after the specified time.
+** Example Code : await Task.Delay(5000) -- it is a non-blocking call. so it is recommended to use it in 
+async methods.
 
 **
  public async static void SomeMethod()

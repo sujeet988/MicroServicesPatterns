@@ -4,7 +4,7 @@ Facade Design Pattern
 
 when to use and why
 --when we have to hide the system complexity from the client
--- example : CAR suppose client(user) -> press accellate buttpn -car speed go up-~
+-- example : CAR suppose client(user) -> press ccelrate buttOn -car speed go up-~
 but user  have no idea internal implementaion of accelate functionality.
 
 client -> Facacde layer -> system layer
