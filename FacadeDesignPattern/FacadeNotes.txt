@@ -22,7 +22,7 @@ client-> facade1-> facade2-system
 ** Facade vs proxy :
 proxy -> client callls->proxy layer -> call actual object
 
-*proxy can take only one type or objects 
+*proxy can take only one type or objects
 Facade: -> client calls -> facade -> calls actual objects
 
 ** Facade vs Adapter

@@ -1,3 +1,11 @@
+** Unit of work :
+The unit of work pattern is a design pattern that allows you to group multiple operations into 
+a single transaction. This is particularly useful in scenarios where you need to perform multiple 
+database operations that should either all succeed or all fail together. 
+The unit of work pattern helps manage the database context and ensures that changes are 
+committed only when all operations are successful.
+
+
 ** Unit of work pattern in ASP.NET Core MVC using EF Core **
 
  https://learn.microsoft.com/en-us/aspnet/mvc/overview/older-versions/getting-started-with-ef-5-using-mvc-4/implementing-the-repository-and-unit-of-work-patterns-in-an-asp-net-mvc-application

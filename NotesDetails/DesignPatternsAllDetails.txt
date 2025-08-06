@@ -1,10 +1,9 @@
 ** What is a Design Pattern?
 A design pattern is a standard solution to a common problem in software design.
-
 Think of it like best practices or proven templates you can apply when coding. Instead of reinventing
 the wheel every time, you use these ready-made "solutions" that experts have refined over time.
 
-In C# (and in general), design patterns help make your code:
+** design patterns help make your code:
 
 Reusable
 Scalable
@@ -15,13 +14,14 @@ Flexible
 Broadly, design patterns are divided into three main categories:
 
 Category	Purpose	Examples
-Creational	Focus on how objects are created (instantiation).	
+
+1.Creational	Focus on how objects are created (instantiation).	
 Example :Singleton, Factory, Abstract Factory, Builder, Prototype
 
-Structural: Focus on how classes/objects are composed to form larger structures.	
+2.Structural: Focus on how classes/objects are composed to form larger structures.	
 Example : Adapter, Decorator, Facade, Proxy, Composite, Bridge
 
-Behavioral	Focus on how objects interact and communicate.	
+3.Behavioral	Focus on how objects interact and communicate.	
 Example : Observer, Strategy, Command, Iterator, State, Template Method, Mediator
 
 ** Quick Glance at Some Popular Design Patterns in C#:

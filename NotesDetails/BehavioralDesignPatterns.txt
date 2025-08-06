@@ -1,4 +1,12 @@
-Behavioral Design Patterns :
+**Behavioral Design Patterns :
+
+--> In real-time applications, sometimes we want to change the behavior of a class, 
+	and again, we don’t want it to affect other classes of the project. 
+	For example, we have an Invoice class that currently applies taxes as 18%. 
+	Tomorrow, if we want to add another extra tax. That means we are changing the
+	behavior of a class. The Behavioral Design Pattern comes 
+    into the picture to solve such behavioral issues.
+
 -> Guides how different objects communciate with each other 
 effectively  and distribute task efficiently , making software
 system flexible  and easy to maintain
@@ -21,14 +29,14 @@ to better task execution.
 
 ** Types:
 1. State Patterns
-2. Oberver pattern -done
-3. Strategy Pattern  -done
-4. chain of Responsibility Problems -done
+2. Oberver pattern [imp]
+3. Strategy Pattern [imp]
+4. chain of Responsibility Problems [imp]
 5  template pattern
-6 Interpreter Pattern
-7 command Pattern
-8 Itertaor Pattern
-9 visitor pattern
+6  Interpreter Pattern
+7  command Pattern
+8  Itertaor Pattern
+9  visitor pattern
 10 Mediator pattern
 11 Momento Pattern
 

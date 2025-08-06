@@ -1,8 +1,8 @@
-Creational Deisgn Pattern:
+**Creational Deisgn Pattern:
 Reponsibility is to create 
 objects/controls the creation  of objects
 
-Types of creational Deisgn patterns :
+**Types of creational Deisgn patterns :
 
 Protoptype patterns
 Singleton Design Pattern
@@ -23,7 +23,7 @@ it is  easy to  implements.
 
 3. Factory Design pattern
    -> it is used when all the object creation  and its business logic 
-   -we have to keep it one place
+   --> we have to keep it one place
 
 4. Abstract Factory Design pattern:
    -> It is factory Of Factory
@@ -36,7 +36,7 @@ order like.
 AddRoof()
 AddWall()
 AddWindows()
-etc. When this kind of requirment we using Builder pattern.
+Note:  When this kind of requirment we using Builder pattern.
 
 
 

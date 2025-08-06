@@ -18,7 +18,7 @@ Real-Time Example:
 Saving data to Azure Blob Storage — if storage is down, the circuit breaker avoids repeated failed 
 attempts and can trigger fallback logic.
 
-Implementation in .NET Core:
+**Implementation in .NET Core:
 Approach 1: Manual implementation without any NuGet package.
 
 Approach 2: Using Polly – a powerful .NET library for resilience patterns like Retry, Circuit Breaker, 

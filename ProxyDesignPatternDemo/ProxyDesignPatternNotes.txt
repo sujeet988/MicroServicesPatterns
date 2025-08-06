@@ -1,2 +1,4 @@
 Proxy Design patterns :
 Proxy design pattern is a structural pattern.
+It provides an object representing another object. The proxy controls access to the original object, 
+allowing you to perform actions before or after the request is processed.
