@@ -1,17 +1,19 @@
-Builder Design Pattern Notes :
---it is used when we need to create object step by step
+**Builder Design Pattern  :
+ --> Builder Pattern helps you create big or complex objects step by step 
+     instead of using a long constructor with many parameters.
+
+
 -> Stringbuilder based on builder Design Patterns
 -> at every step it return mediator object or builder obejct not 
 complete  objects. means home/prodcut is still not ready
 -> like for string builder we have ToString() that returns final object or value.
 -> its reduces complexity of lots of optional paramters.
-->mandatory/optional
---in build design pattern not support dynamic nature of object but in decorator
+>  in build design pattern not support dynamic nature of object but in decorator
   design pattern support.
 
 
  **Without Builder Design pattern
-  -Without Builder Design pattern Multiple constructor need to create
+  --> Without Builder Design pattern Multiple constructor need to create
    if differnt type of object needed
 
   public class Student
@@ -32,7 +34,8 @@ complete  objects. means home/prodcut is still not ready
             this.motherName = builder.motherName;
             this.subjects = builder.subjects;
         }
-         public Student( int rollNumber,int age,name) // if need three value the create constructor with three paramters
+        //  if need three value the create constructor with three paramters
+         public Student( int rollNumber,int age,name) 
         {
             this.rollNumber = this.rollNumber;
             this.age = builder.age;
@@ -43,10 +46,9 @@ complete  objects. means home/prodcut is still not ready
         }
      
       }
-      -- We can solve this problem by builder patterns
+   Note :  We can solve this problem by builder patterns
 
 *With builder Design Patterns
-
   public class Student
     {
         int rollNumber;

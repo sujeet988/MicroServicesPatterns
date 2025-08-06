@@ -1,10 +1,10 @@
-Facade Design Pattern
+**Facade Design Pattern
 -- simple to use
 -- widely used
 
-when to use and why
---when we have to hide the system complexity from the client
--- example : CAR suppose client(user) -> press ccelrate buttOn -car speed go up-~
+**when to use and why
+when we have to hide the system complexity from the client
+Example : CAR suppose client(user) -> press accelrate buttOn -car speed go up-~
 but user  have no idea internal implementaion of accelate functionality.
 
 client -> Facacde layer -> system layer
@@ -12,25 +12,21 @@ we are not always forcing client to use facade. client
 can also use system directly
 
 
---DAO -data access objects
+*DAO -> data access objects
 
 Sceneraio of facade
-1.
-2.
-3.Facde using  another facade
+1.Facde using  another facade
 client-> facade1-> facade2-system
 
 
 ** Facade vs proxy :
-proxy :
 proxy -> client callls->proxy layer -> call actual object
 
---proxy can take only one type or objects 
+*proxy can take only one type or objects 
 Facade: -> client calls -> facade -> calls actual objects
 
 ** Facade vs Adapter
 -> adapter- make compatbility between client and  external interface api
--- facade -> it reducess the complexity.
+-> facade -> it reducess the complexity.
 
-** 
 

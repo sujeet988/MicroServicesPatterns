@@ -17,9 +17,11 @@ Analogy:
 •	Process = House:
 Each house is separate and has its own address and rooms. Houses don’t share space with each other.
 •	Thread = Person in the House:
-Each person (thread) can move around and do things inside the house. All people in the same house can talk to each other and share things (like the kitchen or living room).
+   Each person (thread) can move around and do things inside the house. All people in the same house can 
+   talk to each other and share things (like the kitchen or living room).
+
 •	Task = Chore:
-A chore (task) is a job that a person does, like washing dishes or vacuuming.
+    A chore (task) is a job that a person does, like washing dishes or vacuuming.
 •	Sometimes, people do chores at the same time (in parallel).
 •	Sometimes, a person waits for another to finish before starting their own chore.
 
@@ -29,6 +31,7 @@ Summary:
 •	Chores (tasks) are the actual jobs that need to get done, and people (threads) perform them.
 
 ** Thread vs Task in .NET:
+
 A thread executes a task.
 •	The thread is the worker (the person).
 •	The task is the work to be done (the chore).
@@ -42,11 +45,10 @@ Summary:
 Yes, a process can have multiple threads.
 Each thread runs independently but shares the process’s memory and resources.
 
-A thread cannot perform multiple tasks at the exact same time.
-
+** A thread cannot perform multiple tasks at the exact same time.
 •	A thread can only execute one instruction at a time.
 •	However, a thread can switch between tasks quickly (multitasking), but at any moment, it’s only 
-   doing one thing
+    doing one thing
 
 ** A task is like a chore—it’s a specific piece of work (such as downloading data or processing a file) 
 that a thread (the person) will do.

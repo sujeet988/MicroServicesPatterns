@@ -1,8 +1,9 @@
 ** Await :
 
-It is important to realize that await does not mean that the thread will have to be blocked waiting for the operation. 
-Await means the thread is free to go to do another thing and then he will come back when this operation 
-(in our example Task.Dealy i.e. after 10 seconds) is done. The following example code exactly does the same thing.
+It is important to realize that await does not mean that the thread will have to be blocked waiting for 
+the operation. Await means the thread is free to go to do another thing and then he will come back when 
+this operation (in our example Task.Dealy i.e. after 10 seconds) is done. 
+The following example code exactly does the same thing.
 
  public async static void SomeMethod()
         {

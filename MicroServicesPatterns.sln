@@ -51,9 +51,6 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChainResponsibilityDesignPattern", "LLDChainResponsibilityDesignPattern\ChainResponsibilityDesignPattern\ChainResponsibilityDesignPattern.csproj", "{8388692D-1A2D-4EE5-B028-1850ED49279E}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ProxyDesignPattern", "ProxyDesignPattern", "{84428967-BF87-49D2-9203-E0DD80B1F8F3}"
-	ProjectSection(SolutionItems) = preProject
-		ProxyDesignPattern\ProxyDesignPatternNotes.txt = ProxyDesignPattern\ProxyDesignPatternNotes.txt
-	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FacadeDesignPattern", "FacadeDesignPattern", "{881ECE6E-65DC-4273-80E4-789BE76392C6}"
 	ProjectSection(SolutionItems) = preProject
@@ -79,7 +76,6 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CompositeDesignPattern", "CompositeDesignPattern", "{2BC9DCC2-982A-48BE-83CD-5555E0629756}"
 	ProjectSection(SolutionItems) = preProject
 		CompositeDesignPattern\CompositeDesignPatternNotes.txt = CompositeDesignPattern\CompositeDesignPatternNotes.txt
-		CompositeDesignPattern\FileSystemAndProblems.txt = CompositeDesignPattern\FileSystemAndProblems.txt
 	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FileSystemUsingCompositeDesignPattern", "CompositeDesignPattern\FileSystemUsingCompositeDesignPattern\FileSystemUsingCompositeDesignPattern.csproj", "{7F8A7FC6-06C3-4DF4-9F96-2C5BD6A5D1BD}"
@@ -133,15 +129,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DecoratorDesignPatternDemo"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CreationalDesignPatterns", "CreationalDesignPatterns", "{294EB617-17BC-42F6-A224-237B80D07777}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FactoryDesignPatterns", "CreationalDesignPatterns\FactoryDesignPatterns\FactoryDesignPatterns.csproj", "{BA409163-A14C-410A-9299-1F0CA40C7AFB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FactoryDesignPatterns", "CreationalDesignPatterns\FactoryDesignPatterns\FactoryDesignPatterns.csproj", "{BA409163-A14C-410A-9299-1F0CA40C7AFB}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "StructuralDesignPatterns", "StructuralDesignPatterns", "{9EFC099E-5F84-4FFC-BC11-5619B3C0B745}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdapterDesignPattern", "StructuralDesignPatterns\AdapterDesignPattern\AdapterDesignPattern.csproj", "{BED57719-21E4-4DAF-97EF-51AF37C4B101}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AdapterDesignPattern", "StructuralDesignPatterns\AdapterDesignPattern\AdapterDesignPattern.csproj", "{BED57719-21E4-4DAF-97EF-51AF37C4B101}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BehavioralDesignPatterns", "BehavioralDesignPatterns", "{84F85737-DC99-4F8D-98A2-2C6EB3089170}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChainResponsibilityDesignPatterns", "BehavioralDesignPatterns\ChainResponsibilityDesignPatterns\ChainResponsibilityDesignPatterns.csproj", "{98132DD9-87BA-4538-885A-1FD5DD9760BA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChainResponsibilityDesignPatterns", "BehavioralDesignPatterns\ChainResponsibilityDesignPatterns\ChainResponsibilityDesignPatterns.csproj", "{98132DD9-87BA-4538-885A-1FD5DD9760BA}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UnitTestsWIthMsTest", "UnitTestsWIthMsTest", "{02969718-C0DC-4F9D-9A2D-D3CD4B3D1053}"
 EndProject
@@ -149,9 +145,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UnitTestsWIthXUnit", "UnitT
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UnitTestsWIthNUnit", "UnitTestsWIthNUnit", "{3DE369D9-8D37-43F9-A429-D7FC2696E268}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FactoryDesignPatternsUnitTestsWIthMsTest", "UnitTestsWIthMsTest\FactoryDesignPatternsUnitTestsWIthMsTest\FactoryDesignPatternsUnitTestsWIthMsTest.csproj", "{41E13B04-9776-40DB-86D0-97667EDCDAFA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FactoryDesignPatternsUnitTestsWIthMsTest", "UnitTestsWIthMsTest\FactoryDesignPatternsUnitTestsWIthMsTest\FactoryDesignPatternsUnitTestsWIthMsTest.csproj", "{41E13B04-9776-40DB-86D0-97667EDCDAFA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsyncAwaitTask", "AsyncVsAwait\AsyncAwaitTask\AsyncAwaitTask.csproj", "{11B2DEBB-1212-4342-B239-ED435402C86B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AsyncAwaitTask", "AsyncVsAwait\AsyncAwaitTask\AsyncAwaitTask.csproj", "{11B2DEBB-1212-4342-B239-ED435402C86B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -11,20 +11,22 @@ a thread is a sequence of instructions that can be executed independently of our
 by defaut every application has a main thread, which is the first thread that runs when the application starts.
 
 ** How we can Achieve Parallelism in Programming?:
-In Programming, we can achieve Parallelism by using threads. A thread is a sequence of instructions that can be 
-executed independently of other code. Since they are independent within a process, so we can have several threads.
-And if our processor allows, then we can run several threads simultaneously. When we are executing multiple threads 
-simultaneously, then it is called multithreading. So, Parallelism uses multiple threads to perform multiple tasks 
-simultaneously. Therefore, parallelism uses multithreading and multithreading is a form of concurrency.
+In Programming, we can achieve Parallelism by using threads. 
+A thread is a sequence of instructions that can be executed independently of other code. 
+Since they are independent within a process, so we can have several threads.
+And if our processor allows, then we can run several threads simultaneously.
+When we are executing multiple threads simultaneously, then it is called multithreading. 
+So, Parallelism uses multiple threads to perform multiple tasks simultaneously. 
+Therefore, parallelism uses multithreading and multithreading is a form of concurrency.
 
 **:Asynchronous Programming
 
 Asynchronous Programming allows us to use threads efficiently and threads are prevented 
 from being unnecessarily blocked.
 
-Suppose you ordered a pizza using any food delivery app and they tell you it will take 30 minutes to deliver the
-pizza to your location. What will you do in those 30 minutes? Do you just freeze yourself waiting for the pizza, 
-or will you do some other tasks while the pizza arrives? So, obviously, you want to do a few things while waiting 
-for the pizza.
+Suppose you ordered a pizza using any food delivery app and they tell you it will take 30 minutes to 
+deliver thepizza to your location. What will you do in those 30 minutes? Do you just freeze 
+yourself waiting for the pizza, or will you do some other tasks while the pizza arrives? So, 
+obviously, you want to do a few things while waiting for the pizza.
 
 ** 

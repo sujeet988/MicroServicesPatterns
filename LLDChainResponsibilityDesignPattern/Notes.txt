@@ -1,1 +1,15 @@
+﻿
+** ChainResponsibilityDesignPattern:
+Chain of Responsibility lets you pass a request along a chain of handlers.
+Each handler decides whether to process the request or pass it to the next.
+
+Example :
+Imagine a support system:
+
+Level 1 Support → checks if it can handle
+If not, passes to Level 2 Support
+Then to Manager, and so on...
+
+Each one either handles or forwards the request.
+
 https://dotnettutorials.net/lesson/chain-of-responsibility-design-pattern/

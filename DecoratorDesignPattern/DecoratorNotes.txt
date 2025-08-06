@@ -3,12 +3,12 @@
    This is done by creating a decorator class that wraps the original class.
 -> Real time use case :
  1.pizza shop-> like base pizza and after this mutiple top like, veggie extra, extra chigg(decorate)
-  base pizaa+extra cheese+mushroom
+  base pizaa + extra cheese+mushroom
  2. cofee
- --base coffe(expressoo) + (cream-Decorator)
- 3.car -> base car + extra feature(seat cover  + ac)\
+ Base coffe(expressoo) + (cream-Decorator)
+ 3.car -> base car + extra feature(seat cover  + ac)
 
-  why we need decorator pattern:
- -- class explosion -> this reduce class explosion
- -- reduce multiple class  to less class
- -- it is has-A and ISA-A Relation ship-both
+ **why we need decorator pattern:
+ --> class explosion -> this reduce class explosion
+ --> reduce multiple class  to less class
+ --> it is has-A and ISA-A Relation ship-both
